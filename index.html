@@ -1,1187 +1,514 @@
 
-
-
-
 <!DOCTYPE html>
-<html>
-  <head>
-    <link href='https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:32,height:32/https://www.filepicker.io/api/file/tkY0uCwATwquRaiYhZTM' rel='icon' type='image/png'>
-<link href='https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:72,height:72/https://www.filepicker.io/api/file/tkY0uCwATwquRaiYhZTM' rel='apple-touch-icon' type='image/png'>
-<link href='https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:144,height:144/https://www.filepicker.io/api/file/tkY0uCwATwquRaiYhZTM' rel='apple-touch-icon' type='image/png'>
-<link href='https://assets.teachablecdn.com/splash-images/teachable-apple-startup-image.png' rel='apple-touch-startup-image' type='image/png'>
-<link href='https://assets.teachablecdn.com/splash-images/teachable-apple-startup-image_2x.png' rel='apple-touch-startup-image' type='image/png'>
-<meta name='apple-mobile-web-app-capable' content='yes' />
-<meta charset="UTF-8">
-<meta name="csrf-param" content="authenticity_token" />
-<meta name="csrf-token" content="VgOv0QC5sYvIBEkU100vonlRGULLcSjAAe+IDy01+lzjJBCwPI3KhNbLWY823rkOie7mll/q7WDOz9oocWckZQ==" />
-<style type='text/css'>:root{--brand_primary: #2b3636;--brand_secondary: #09A59A;--brand_heading: #2b3636;--brand_text: #2b3636;--brand_navbar_text: #ffffff;--brand_navbar_fixed_text: #ffffff;--brand_homepage_heading: #ffffff;--brand_course_heading: #ffffff;--brand_video_player_color: #09A59A;--font_family:Proxima;} @font-face {
-  font-family: 'Proxima';
-  src: url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-regular-webfont.eot?1307578394");
-  src: url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-regular-webfont.eot?iefix") format("eot"), url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-regular-webfont.woff?1307578394") format("woff"), url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-regular-webfont.ttf?1307578394") format("truetype"), url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-regular-webfont.svg#webfont2rpW2ohz") format("svg");
-  font-display: swap; }
+<!--[if IE 7]>
+<html class="ie ie7" dir="rtl" lang="ar">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" dir="rtl" lang="ar">
+<![endif]-->
+<!--[if !(IE 7) | !(IE 8)  ]><!-->
+<html dir="rtl" lang="ar"class="tcb">
+	<!--<![endif]-->
+	<head>
+				<meta charset="UTF-8"/>
+								
+						<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-@font-face {
-  font-family: 'Proxima';
-  font-style: italic;
-  src: url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-regitalic-webfont.eot?1307578394");
-  src: url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-regitalic-webfont.eot?iefix") format("eot"), url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-regitalic-webfont.woff?1307578394") format("woff"), url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-regitalic-webfont.ttf?1307578394") format("truetype"), url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-regitalic-webfont.svg#webfont2rpW2ohz") format("svg");
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Proxima';
-  font-weight: 300;
-  src: url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-light-webfont.eot?1307578394");
-  src: url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-light-webfont.eot?iefix") format("eot"), url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-light-webfont.woff?1307578394") format("woff"), url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-light-webfont.ttf?1307578394") format("truetype"), url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-light-webfont.svg#webfont2rpW2ohz") format("svg");
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Proxima';
-  font-weight: 600;
-  src: url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-semibold-webfont.eot?1307578394");
-  src: url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-semibold-webfont.eot?iefix") format("eot"), url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-semibold-webfont.woff?1307578394") format("woff"), url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-semibold-webfont.ttf?1307578394") format("truetype"), url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-semibold-webfont.svg#webfont2rpW2ohz") format("svg");
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Proxima';
-  font-weight: 600;
-  font-style: italic;
-  src: url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-semibolditalic-webfont.eot?1307578394");
-  src: url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-semibolditalic-webfont.eot?iefix") format("eot"), url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-semibolditalic-webfont.woff?1307578394") format("woff"), url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-semibolditalic-webfont.ttf?1307578394") format("truetype"), url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-semibolditalic-webfont.svg#webfont2rpW2ohz") format("svg");
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Proxima';
-  font-weight: bold;
-  src: url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-bold-webfont.eot?1307578394");
-  src: url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-bold-webfont.eot?iefix") format("eot"), url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-bold-webfont.woff?1307578394") format("woff"), url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-bold-webfont.ttf?1307578394") format("truetype"), url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-bold-webfont.svg#webfont2rpW2ohz") format("svg");
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Proxima';
-  font-weight: bold;
-  font-style: italic;
-  src: url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-boldit-webfont.eot?1307578394");
-  src: url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-boldit-webfont.eot?iefix") format("eot"), url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-boldit-webfont.woff?1307578394") format("woff"), url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-boldit-webfont.ttf?1307578394") format("truetype"), url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-boldit-webfont.svg#webfont2rpW2ohz") format("svg");
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Proxima';
-  font-weight: 900;
-  src: url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-extrabold-webfont.eot?1307578394");
-  src: url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-extrabold-webfont.eot?iefix") format("eot"), url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-extrabold-webfont.woff?1307578394") format("woff"), url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-extrabold-webfont.ttf?1307578394") format("truetype"), url("//assets.teachablecdn.com/fonts/proxima-nova/proximanova-extrabold-webfont.svg#webfont2rpW2ohz") format("svg");
-  font-display: swap; }
+		<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PW694ZR');</script>
+<!-- End Google Tag Manager --><title>funnels masters course &#8211; هاني حسين</title>
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="هاني حسين &laquo; الخلاصة" href="https://www.hanyhussain.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="هاني حسين &laquo; خلاصة التعليقات" href="https://www.hanyhussain.com/comments/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.hanyhussain.com\/wp-includes\/js\/wp-emoji-release.min.js"}};
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
 </style>
-<link rel="stylesheet" media="screen" href="https://fedora.teachablecdn.com/assets/pages-eb3f94164dd293e6d2058063bfaab3cb59341d674982ca2c7f375698deff5e54.css" />
-<style></style>
-<title>Biaheza&#39;s Dropshipping Course | Biaheza</title>
-<link rel="canonical" href="https://biaheza.teachable.com/">
-<meta property="og:title" content="Biaheza&#39;s Dropshipping Course">
-<meta property="og:type" content="website">
-<meta property="og:image" content="https://www.filepicker.io/api/file/8uVnZTKSLiLeyChlauwT">
-<meta property="og:url" content="https://biaheza.teachable.com/p/biaheza-s-dropshipping-course">
-<meta name="brand_video_player_color" content="#09A59A">
-<meta name="site_title" content="Biaheza">
-<script src='//fast.wistia.com/assets/external/E-v1.js'></script>
-<script src='https://www.recaptcha.net/recaptcha/api.js' async defer></script>
-
-
-      <meta name="asset_host" content="https://fedora.teachablecdn.com">
-     <script src="https://fedora.teachablecdn.com/packs/pages-0ceda77cc0c0d75ed058.js"></script>
-
-
-
-
-<script>
-  if(typeof ga != 'function') {
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-  }
-  ga('create', 'UA-44397410-1', 'auto', {'name': 'fedoraTracker', 'allowLinker': true});
-  ga('fedoraTracker.set', 'anonymizeIp', false);
-  ga('fedoraTracker.require', 'linker');
-  ga('fedoraTracker.linker:autoLink', ['biaheza.teachable.com'] );
-  ga('fedoraTracker.require', 'ecommerce');
-  ga('fedoraTracker.require', 'ec');
-  ga('fedoraTracker.send', 'pageview');
-  ga('create', 'UA-44397410-4', 'auto', {'name': 'teachableTracker', 'allowLinker': true});
-  ga('teachableTracker.set', 'anonymizeIp', false);
-  ga('teachableTracker.require', 'linker');
-  ga('teachableTracker.linker:autoLink', ['biaheza.teachable.com'] );
-  ga('teachableTracker.require', 'ecommerce');
-  ga('teachableTracker.require', 'ec');
-  ga('teachableTracker.send', 'pageview');
+	<link rel='stylesheet' id='tve_landing_page_base_css-css'  href='https://www.hanyhussain.com/wp-content/plugins/thrive-visual-editor/landing-page/templates/css/base.css' type='text/css' media='all' />
+<link rel='stylesheet' id='tve_landing_page_blank_v2-css'  href='https://www.hanyhussain.com/wp-content/plugins/thrive-visual-editor/landing-page/templates/css/blank_v2.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-rtl-css'  href='https://www.hanyhussain.com/wp-includes/css/dist/block-library/style-rtl.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-theme-rtl-css'  href='https://www.hanyhussain.com/wp-includes/css/dist/block-library/theme-rtl.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='tve_style_family_tve_flt-css'  href='https://www.hanyhussain.com/wp-content/plugins/thrive-visual-editor/editor/css/thrive_flat.css' type='text/css' media='all' />
+<link rel='stylesheet' id='woohoo-google-fonts-css'  href='https://fonts.googleapis.com/css?family=Oswald%3A400%2C300%2C700%7CLato%3A400%2C300%2C700%2C900%7CWork+Sans%3A400%2C300%2C500%2C600%2C700%2C800%2C900%7COpen+Sans%3A400%2C600%2C700%2C800%7CPlayfair+Display%3A400%2C700%2C900%2C400italic%7CRaleway%3A400%2C300%2C500%2C600%2C700%2C800%2C900%7CRoboto%3A400%2C300%2C100%2C700%7CMontserrat%3A400%2C700&#038;subset=latin%2Cgreek%2Cgreek-ext%2Cvietnamese%2Ccyrillic-ext%2Clatin-ext%2Ccyrillic' type='text/css' media='all' />
+<link rel='stylesheet' id='woohoo-default-css'  href='https://www.hanyhussain.com/wp-content/themes/woohoo/css/style.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wooohoo-ilightbox-skin-css'  href='https://www.hanyhussain.com/wp-content/themes/woohoo/css/ilightbox/dark-skin/skin.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wooohoo-ilightbox-skin-black-css'  href='https://www.hanyhussain.com/wp-content/themes/woohoo/css/ilightbox/metro-black-skin/skin.css' type='text/css' media='all' />
+<script type='text/javascript' src='https://www.hanyhussain.com/wp-includes/js/plupload/moxie.min.js' id='moxiejs-js'></script>
+<script type='text/javascript' src='https://www.hanyhussain.com/wp-includes/js/plupload/plupload.min.js' id='plupload-js'></script>
+<script type='text/javascript' id='jquery-core-js-extra'>
+/* <![CDATA[ */
+var bd_w_blocks = {"bdaia_w_ajax_url":"https:\/\/www.hanyhussain.com\/wp-admin\/admin-ajax.php","bdaia_w_ajax_nonce":"f918fa5aca"};
+var bd_blocks = {"bdaia_ajax_url":"https:\/\/www.hanyhussain.com\/wp-admin\/admin-ajax.php","bdaia_ajaxnonce":"f918fa5aca"};
+var bd_script = {"post_id":"12546","ajaxurl":"https:\/\/www.hanyhussain.com\/wp-admin\/admin-ajax.php"};
+/* ]]> */
 </script>
+<script type='text/javascript' src='https://www.hanyhussain.com/wp-includes/js/jquery/jquery.js' id='jquery-core-js'></script>
+<link rel="https://api.w.org/" href="https://www.hanyhussain.com/wp-json/" /><link rel="alternate" type="application/json" href="https://www.hanyhussain.com/wp-json/wp/v2/pages/12546" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.hanyhussain.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.hanyhussain.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.5.1" />
+<link rel="canonical" href="https://www.hanyhussain.com/funnels-masters-course/" />
+<link rel='shortlink' href='https://www.hanyhussain.com/?p=12546' />
+<link rel="alternate" type="application/json+oembed" href="https://www.hanyhussain.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.hanyhussain.com%2Ffunnels-masters-course%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.hanyhussain.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.hanyhussain.com%2Ffunnels-masters-course%2F&#038;format=xml" />
+<style type="text/css" id="tve_global_variables">:root{--tcb-color-0:rgb(43, 93, 170);}</style>        <script type="text/javascript">
+            /* <![CDATA[ */
+            var sf_position = '0';
+            var sf_templates = "<a href=\"{search_url_escaped}\"><span class=\"sf_text\">View All Results<\/span><\/a>";
+            var sf_input = '.search-live';
+            jQuery(document).ready(function(){
+                jQuery(sf_input).ajaxyLiveSearch({"expand":false,"searchUrl":"https:\/\/www.hanyhussain.com\/?s=%s","text":"Search","delay":500,"iwidth":180,"width":315,"ajaxUrl":"https:\/\/www.hanyhussain.com\/wp-admin\/admin-ajax.php","rtl":0});
+                jQuery(".live-search_ajaxy-selective-input").keyup(function() {
+                    var width = jQuery(this).val().length * 8;
+                    if(width < 50) {
+                        width = 50;
+                    }
+                    jQuery(this).width(width);
+                });
+                jQuery(".live-search_ajaxy-selective-search").click(function() {
+                    jQuery(this).find(".live-search_ajaxy-selective-input").focus();
+                });
+                jQuery(".live-search_ajaxy-selective-close").click(function() {
+                    jQuery(this).parent().remove();
+                });
+            });
+            /* ]]> */
+        </script>
+    <link rel="shortcut icon" href="https://www.hanyhussain.com/wp-content/uploads/2017/11/favicon.png" type="image/x-icon" /><!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PW694ZR');</script>
+<!-- End Google Tag Manager -->
 
-<meta id='iris-url' data-iris-url=https://eventable.teachable.cloud />
-<link href="/blog/rss" rel="alternate" title="RSS Feed" type="application/rss+xml" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<script type="text/javascript">!function(e,t){(e=t.createElement("script")).src="https://cdn.convertbox.com/convertbox/js/embed.js",e.id="app-convertbox-script",e.async=true,e.dataset.uuid="90224a33-9e60-47d3-a43d-05aa7035170f",document.getElementsByTagName("head")[0].appendChild(e)}(window,document);</script><script type="text/javascript">
+/* <![CDATA[ */
+var userRating = {"ajaxurl":"https://www.hanyhussain.com/wp-admin/admin-ajax.php" , "your_rating":"" , "nonce":"f918fa5aca"};
+var userLike = {"ajaxurl":"https://www.hanyhussain.com/wp-admin/admin-ajax.php" , "nonce":"f918fa5aca"};
+/* ]]> */
+var bdaia_theme_uri = 'https://www.hanyhussain.com/wp-content/themes/woohoo';
+</script>
+			<style type="text/css" class="tve_custom_style">@import url("//fonts.googleapis.com/css?family=Roboto:300,500,700,&subset=latin");@import url("//fonts.googleapis.com/css?family=Lalezar:400&subset=latin");@media (min-width: 300px){[data-css="tve-u-161f688935a"] { color: rgb(255, 255, 255) !important; }[data-css="tve-u-161f6887d82"] { color: rgb(255, 255, 255) !important; }[data-css="tve-u-161f6885e11"] { color: rgb(255, 255, 255) !important; }[data-css="tve-u-161f6883bf2"] { color: rgb(255, 255, 255) !important; }[data-css="tve-u-161f6854968"] { max-width: 90%; float: none; margin-left: auto !important; margin-right: auto !important; margin-top: 9px !important; }:not(#tve) [data-css="tve-u-161f6853332"] { color: rgb(255, 255, 255) !important; font-size: 16px !important; }[data-css="tve-u-161f684d45f"] { background-image: linear-gradient(rgb(24, 85, 126), rgb(24, 85, 126)) !important; background-size: auto !important; background-position: 50% 50% !important; background-attachment: scroll !important; background-repeat: no-repeat !important; }:not(#tve) [data-css="tve-u-161f67aeb3c"]:hover > :first-child { color: rgb(1, 114, 18) !important; }[data-css="tve-u-161f6806ecc"] { color: rgb(17, 109, 145); }[data-css="tve-u-161f67ff060"] { color: rgb(17, 109, 145); }[data-css="tve-u-161f67f9f7f"] { color: rgb(17, 109, 145); }[data-css="tve-u-161f67f03a2"] { color: rgb(17, 109, 145); }[data-css="tve-u-161f67edf1d"] { color: rgb(17, 109, 145); }[data-css="tve-u-161f67ebaef"] { color: rgb(17, 109, 145); }:not(#tve) [data-css="tve-u-161f67aeb2d"] p, :not(#tve) [data-css="tve-u-161f67aeb2d"] li, :not(#tve) [data-css="tve-u-161f67aeb2d"] blockquote, :not(#tve) [data-css="tve-u-161f67aeb2d"] address { font-size: 14px; font-family: "Comic Sans MS", cursive, sans-serif; }[data-css="tve-u-161f656fd9d"] { max-width: 90%; float: none; margin-left: auto !important; margin-right: auto !important; }[data-css="tve-u-161f64cbe94"] + div { clear: none; }[data-css="tve-u-161f64cbe94"] { float: none; margin-left: auto; margin-right: auto; width: 683px; }[data-css="tve-u-161f646ac11"] { padding-bottom: 0px !important; padding-top: 0px !important; }[data-css="tve-u-161f646ac11"] .tve_sep { background-image: url("data:image/svg+xml;charset=utf8,%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 9 3' style='enable-background:new 0 0 9 3;' xml:space='preserve'%3E%3Crect x='1' y='0.4' fill='rgb(66, 66, 66)' width='7' height='2.3'/%3E%3C/svg%3E"); height: 10px; background-size: 10px 10px; }[data-css="tve-u-161f644e230"] { color: rgb(1, 114, 18); }:not(#tve) [data-css="tve-u-161f6434dcf"] p, :not(#tve) [data-css="tve-u-161f6434dcf"] li, :not(#tve) [data-css="tve-u-161f6434dcf"] blockquote, :not(#tve) [data-css="tve-u-161f6434dcf"] address { font-size: 17px; font-family: "Comic Sans MS", cursive, sans-serif; }[data-css="tve-u-161f6426435"] { font-size: 18px; width: 18px; height: 18px; color: rgb(1, 114, 18); }[data-css="tve-u-161f6426417"] { font-size: 18px; width: 18px; height: 18px; color: rgb(1, 114, 18); }[data-css="tve-u-161f6426414"] { font-size: 18px; width: 18px; height: 18px; color: rgb(1, 114, 18); }:not(#tve) [data-css="tve-u-161f640ff12"] { font-family: "Comic Sans MS", cursive, sans-serif !important; font-size: 19px !important; }[data-css="tve-u-161f63ff2d1"] { float: none; margin-left: auto; margin-right: auto; width: 186px; }[data-css="tve-u-161f63da8a0"] { background-image: linear-gradient(rgb(239, 245, 248), rgb(239, 245, 248)) !important; background-size: auto !important; background-position: 50% 50% !important; background-attachment: scroll !important; background-repeat: no-repeat !important; }[data-css="tve-u-161f6227932"] + div { clear: none; }[data-css="tve-u-161f6227932"] { float: none; margin-left: auto; margin-right: auto; width: 553px; }[data-css="tve-u-161f62114a6"] { max-width: 90%; float: none; margin-left: auto !important; margin-right: auto !important; }[data-css="tve-u-161f61ecb9b"] { float: none; margin-left: auto; margin-right: auto; width: 177px; }[data-css="tve-u-161f61b74ff"] { max-width: 90%; float: none; margin-left: auto !important; margin-right: auto !important; }[data-css="tve-u-161f61a783d"] { background-image: linear-gradient(rgb(17, 97, 156), rgb(17, 97, 156)) !important; background-size: auto !important; background-position: 50% 50% !important; background-attachment: scroll !important; background-repeat: no-repeat !important; }[data-css="tve-u-161f61574b3"] { float: none; margin-left: auto !important; margin-right: auto !important; margin-bottom: 20px !important; }:not(#tve) [data-css="tve-u-161f61431ab"] { font-family: "Comic Sans MS", cursive, sans-serif !important; }[data-css="tve-u-161f612e7d9"] { border-radius: 8px; overflow: hidden; background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)) !important; background-size: auto !important; background-position: 50% 50% !important; background-attachment: scroll !important; background-repeat: no-repeat !important; }[data-css="tve-u-161f612d550"] { border-radius: 8px; overflow: hidden; background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)) !important; background-size: auto !important; background-position: 50% 50% !important; background-attachment: scroll !important; background-repeat: no-repeat !important; }[data-css="tve-u-161f612c28f"] { border-radius: 8px; overflow: hidden; background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)) !important; background-size: auto !important; background-position: 50% 50% !important; background-attachment: scroll !important; background-repeat: no-repeat !important; }[data-css="tve-u-161f6129934"] { border-radius: 8px; overflow: hidden; background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)) !important; background-size: auto !important; background-position: 50% 50% !important; background-attachment: scroll !important; background-repeat: no-repeat !important; }[data-css="tve-u-161f611bd24"] { margin-left: -15px; }[data-css="tve-u-161f611bd24"] > .tcb-flex-col { padding-left: 15px; }[data-css="tve-u-161f6117405"] { background-image: linear-gradient(rgb(239, 245, 248), rgb(239, 245, 248)) !important; background-size: auto !important; background-position: 50% 50% !important; background-attachment: scroll !important; background-repeat: no-repeat !important; }[data-css="tve-u-161f610d47c"] { float: none; border: none; background-image: none !important; margin-left: auto !important; margin-right: auto !important; }[data-css="tve-u-161f6102fd3"] + div { clear: none; }[data-css="tve-u-161f6102fd3"] { float: none; margin-left: auto; margin-right: auto; width: 85px; margin-bottom: 5px !important; }[data-css="tve-u-161f60ffc44"] + div { clear: none; }[data-css="tve-u-161f60ffc44"] { float: none; margin-left: auto; margin-right: auto; width: 85px; margin-bottom: 5px !important; }[data-css="tve-u-161f60fcaf1"] + div { clear: none; }[data-css="tve-u-161f60fcaf1"] { float: none; margin-left: auto; margin-right: auto; width: 85px; margin-bottom: 5px !important; }[data-css="tve-u-161f60f9f92"] + div { clear: none; }[data-css="tve-u-161f60f9f92"] { float: none; margin-left: auto; margin-right: auto; width: 85px; margin-bottom: 5px !important; }[data-css="tve-u-161f60d3fb5"] + div { clear: none; }[data-css="tve-u-161f60d3fb5"] { float: none; margin-left: auto; margin-right: auto; width: 254px; margin-top: 0px !important; }[data-css="tve-u-161f6058c40"] { margin-top: 19px !important; }:not(#tve) [data-css="tve-u-161f6037605"] { font-family: "Comic Sans MS", cursive, sans-serif !important; font-size: 18px !important; }[data-css="tve-u-161f5ffc34a"] { line-height: 1.5em !important; }[data-css="tve-u-161f6012272"] { max-width: 80%; float: none; margin-left: auto !important; margin-right: auto !important; margin-top: -21px !important; }:not(#tve) [data-css="tve-u-161f5ffc34a"] { font-family: "Comic Sans MS", cursive, sans-serif !important; font-size: 25px !important; }[data-css="tve-u-161f5fda0bf"] { background-image: linear-gradient(rgb(239, 245, 248), rgb(239, 245, 248)) !important; background-size: auto !important; background-position: 50% 50% !important; background-attachment: scroll !important; background-repeat: no-repeat !important; }[data-css="tve-u-161f5f51bfe"] { line-height: 1em !important; }:not(#tve) [data-css="tve-u-161f5f51bfe"] { font-family: "Comic Sans MS", cursive, sans-serif !important; font-size: 21.3333px !important; }[data-css="tve-u-161f5ee7535"] { display: block; max-width: 396px; width: 396px; }[data-css="tve-u-161f5ee7535"] .tcb-button-link { min-height: 54.7619px; font-size: 1.33333em; border-radius: 8px; padding-top: 0px; padding-bottom: 0px; border: 1px solid rgb(11, 75, 21); box-shadow: rgba(0, 0, 0, 0.4) -1px 0px 3px 0px, rgba(0, 0, 0, 0.4) 0px -1px 3px 0px, rgba(0, 0, 0, 0.4) 1px 0px 3px 0px, rgba(0, 0, 0, 0.4) 0px 1px 3px 0px; background-color: rgb(1, 114, 18) !important; }[data-css="tve-u-161f5ee1334"] { float: none; max-width: 90%; margin-left: auto !important; margin-right: auto !important; }[data-css="tve-u-161f5e552fe"] { text-shadow: rgba(0, 0, 0, 0.4) 2px 2px 2px, rgba(0, 0, 0, 0.4) -2px 0px 2px, rgba(0, 0, 0, 0.4) 2px 0px 2px, rgba(0, 0, 0, 0.4) 0px -2px 2px !important; }[data-css="tve-u-161f5d6fd11"] { min-height: 40px !important; }[data-css="tve-u-161f5d5bf22"] { filter: grayscale(0%) blur(0px); opacity: 1; background-image: url("https://www.hanyhussain.com/wp-content/uploads/2018/03/herobg.jpg") !important; background-size: cover !important; background-position: 50% 50% !important; background-attachment: scroll !important; background-repeat: no-repeat !important; }:not(#tve) [data-css="tve-u-161f5d4eb59"] { font-family: "Comic Sans MS", cursive, sans-serif !important; font-size: 18px !important; color: rgb(255, 255, 255) !important; }[data-css="tve-u-161f5d20344"] { float: none; max-width: 90%; padding-top: 0px !important; margin-top: 1px !important; margin-left: auto !important; margin-right: auto !important; box-shadow: none !important; }[data-css="tve-u-161e701280f"] { line-height: 1.5em !important; }:not(#tve) [data-css="tve-u-161e701280f"] { font-family: "Comic Sans MS", cursive, sans-serif !important; font-size: 42px !important; color: rgb(255, 255, 255) !important; }[data-css="tve-u-161e6fe2775"] { max-width: 90%; float: none; margin-left: auto !important; margin-right: auto !important; }[data-css="tve-u-15e09c94f7d"] { background-color: rgb(255, 255, 255); }[data-css="tve-u-161f5d2626c"] { max-width: 90%; float: none; margin-left: auto !important; margin-right: auto !important; padding-top: 0px !important; }:not(#tve) [data-css="tve-u-161f5eda8d3"] { font-weight: 400; font-family: Lalezar !important; font-size: 23px !important; color: rgb(255, 255, 255) !important; }:not(#tve) [data-css="tve-u-161f60ba3d6"] { font-family: "Comic Sans MS", cursive, sans-serif !important; font-size: 18px !important; }[data-css="tve-u-161f615d68b"] { float: none; margin-left: auto !important; margin-right: auto !important; margin-bottom: 20px !important; }[data-css="tve-u-161f61f46da"] { float: none; margin-left: auto; margin-right: auto; width: 941px; }[data-css="tve-u-161f624c20b"] { padding-top: 0px !important; padding-bottom: 0px !important; }[data-css="tve-u-161f624c20a"] { background-image: none !important; margin-top: 0px !important; margin-bottom: 0px !important; }[data-css="tve-u-161f624c203"] h3 { margin: 0px !important; padding: 0px !important; }[data-css="tve-u-161f624c203"] p { margin: 0px !important; padding: 0px !important; }:not(#tve) [data-css="tve-u-161f624c20f"] { font-size: 20px !important; }[data-css="tve-u-161f624c21e"] { padding: 0px 20px !important; margin-top: 20px !important; margin-bottom: 0px !important; }[data-css="tve-u-161f624c207"] { background-image: none !important; padding: 0px !important; margin-top: 0px !important; margin-bottom: 0px !important; }[data-css="tve-u-161f624c208"] { line-height: 50px !important; }:not(#tve) [data-css="tve-u-161f624c208"] { font-family: "Comic Sans MS", cursive, sans-serif !important; color: rgb(255, 255, 255) !important; font-size: 40px !important; }[data-css="tve-u-161f624c202"] { border-radius: 15px 15px 0px 0px; overflow: hidden; border: none; background-image: none !important; background-color: rgb(255, 255, 255) !important; }[data-css="tve-u-161f624c206"] { border-radius: 0px; overflow: hidden; clip-path: url("#clip-bottom-64c077b6fa175"); -webkit-clip-path: url("#clip-bottom-64c077b6fa175");  background-image: none !important; background-color: rgb(1, 114, 18) !important; }[data-css="tve-u-161f624c204"] { max-width: 110%; margin-left: -20px !important; margin-right: -20px !important; margin-top: 0px !important; padding-top: 20px !important; padding-bottom: 30px !important; }[data-css="tve-u-161f624c212"] { max-width: 100%; background-image: none !important; margin: 0px 0px 20px !important; }[data-css="tve-u-161f624c20d"] { background-image: none !important; border: 2px dashed rgb(1, 114, 18) !important; }[data-css="tve-u-161f624c20c"] { max-width: 100%; margin-left: auto !important; margin-right: auto !important; padding: 20px !important; }[data-css="tve-u-161f624c210"] { background-image: none !important; border: 2px dashed rgb(1, 114, 18) !important; }[data-css="tve-u-161f624c20e"] { max-width: 100%; background-image: none !important; margin: 0px 0px 20px !important; }[data-css="tve-u-161f624c211"] { max-width: 100%; background-image: none !important; margin: 0px 0px 20px !important; }[data-css="tve-u-161f6291712"] { background-image: none !important; border: 2px dashed rgb(1, 114, 18) !important; }:not(#tve) [data-css="tve-u-161f6393399"] { font-size: 20px !important; }:not(#tve) [data-css="tve-u-161f6394a98"] { font-size: 20px !important; }:not(#tve) [data-css="tve-u-161f63969d0"] { font-size: 20px !important; }:not(#tve) [data-css="tve-u-161f6397f72"] { font-size: 20px !important; }:not(#tve) [data-css="tve-u-161f6399432"] { font-size: 20px !important; }[data-css="tve-u-161f639fdce"] { background-image: none !important; margin-top: 0px !important; margin-bottom: 0px !important; }[data-css="tve-u-161f63a0b6c"] { padding-top: 0px !important; padding-bottom: 0px !important; }[data-css="tve-u-161f63a89d4"] { max-width: 100%; margin-left: auto !important; margin-right: auto !important; padding: 20px !important; }[data-css="tve-u-161f63aa110"] { max-width: 100%; margin-left: auto !important; margin-right: auto !important; padding: 20px !important; }[data-css="tve-u-161f63add02"] { max-width: 100%; margin-left: auto !important; margin-right: auto !important; padding: 20px !important; }[data-css="tve-u-161f63af396"] { max-width: 100%; margin-left: auto !important; margin-right: auto !important; padding: 20px !important; }[data-css="tve-u-161f63b058c"] { max-width: 100%; margin-left: auto !important; margin-right: auto !important; padding: 20px !important; }[data-css="tve-u-161f63c3987"] { float: none; margin-left: auto; margin-right: auto; width: 586px; }[data-css="tve-u-161f63c76f4"] { float: none; margin-left: auto; margin-right: auto; width: 257px; }:not(#tve) [data-css="tve-u-161f64f42c4"] { font-family: "Comic Sans MS", cursive, sans-serif !important; font-size: 21px !important; }[data-css="tve-u-161f64fed9c"] { margin-top: 19px !important; margin-bottom: 13px !important; }[data-css="tve-u-161f6550254"] { float: none; margin-left: auto; margin-right: auto; width: 211px; margin-top: 40px !important; }[data-css="tve-u-161f67aeb25"] { background-image: none !important; }[data-css="tve-u-161f67aeb2a"] p { margin: 0px !important; padding: 0px !important; }[data-css="tve-u-161f67aeb2a"] h1 { margin: 0px !important; padding: 0px !important; }[data-css="tve-u-161f67aeb2d"] { background-image: none !important; }[data-css="tve-u-161f67aeb33"] { font-size: 18px !important; }[data-css="tve-u-161f67aeb3b"] { margin-top: 10px !important; margin-bottom: 21px !important; }:not(#tve) [data-css="tve-u-161f67aeb3c"]:hover { color: rgb(240, 91, 66); }[data-css="tve-u-161f67aeb3c"] { font-size: 60px; color: rgb(17, 109, 145); border-radius: 60px; overflow: hidden; margin-left: auto !important; margin-right: auto !important; margin-top: -30px !important; background-color: rgb(255, 255, 255) !important; padding: 5px !important; background-image: none !important; }[data-css="tve-u-161f67aeb3e"] { background-color: rgb(17, 109, 145) !important; }[data-css="tve-u-161f67aeb41"] { max-width: 70%; margin-left: auto !important; margin-right: auto !important; background-image: none !important; }[data-css="tve-u-161f67aeb42"] .tcb-button-link { box-shadow: none; border-radius: 5px; overflow: hidden; background-image: none !important; background-color: rgb(17, 109, 145) !important; }[data-css="tve-u-161f67aeb42"] { min-width: 150px; margin-left: auto !important; margin-right: auto !important; margin-bottom: 30px !important; }[data-css="tve-u-161f67aeb43"] { border-radius: 5px; overflow: hidden; background-color: rgb(255, 255, 255) !important; border: 2px solid rgb(222, 222, 222) !important; background-image: none !important; }[data-css="tve-u-161f67aeb44"] { color: rgb(17, 109, 145); }[data-css="tve-u-161f67aeb45"] { color: rgb(17, 109, 145); }[data-css="tve-u-161f67aeb46"] { color: rgb(17, 109, 145); }[data-css="tve-u-161f67aeb4a"] { margin-left: auto !important; margin-right: auto !important; background-image: none !important; }[data-css="tve-u-161f67aeb4c"] { max-width: 100%; float: none; margin-top: 20px !important; padding: 10px !important; margin-left: auto !important; margin-right: auto !important; }:not(#tve) [data-css="tve-u-161f67c8da0"] { font-size: 25px !important; font-family: "Comic Sans MS", cursive, sans-serif !important; }[data-css="tve-u-161f67c8da0"] { font-family: Roboto; font-size: 26px !important; text-transform: capitalize !important; }}@media (max-width: 1023px){[data-css="tve-u-161f624c207"] { background-image: none !important; }:not(#tve) [data-css="tve-u-161f624c208"] { font-size: 30px !important; }[data-css="tve-u-161f67aeb41"] { background-image: none !important; }}@media (max-width: 767px){:not(#tve) [data-css="tve-u-161f6434dcf"] p, :not(#tve) [data-css="tve-u-161f6434dcf"] li, :not(#tve) [data-css="tve-u-161f6434dcf"] blockquote, :not(#tve) [data-css="tve-u-161f6434dcf"] address { font-size: 14px; }[data-css="tve-u-161f644e230"] { font-size: 15px; width: 15px; height: 15px; }[data-css="tve-u-161f6426435"] { font-size: 15px; width: 15px; height: 15px; }[data-css="tve-u-161f6426417"] { font-size: 15px; width: 15px; height: 15px; }[data-css="tve-u-161f6426414"] { font-size: 15px; width: 15px; height: 15px; }[data-css="tve-u-161f624c20c"] { margin-top: 5px !important; margin-bottom: 5px !important; }[data-css="tve-u-161f63b058c"] { margin-top: 5px !important; margin-bottom: 5px !important; }[data-css="tve-u-161f63af396"] { margin-top: 5px !important; margin-bottom: 5px !important; }[data-css="tve-u-161f63add02"] { margin-top: 5px !important; margin-bottom: 5px !important; }[data-css="tve-u-161f63aa110"] { margin-top: 5px !important; margin-bottom: 0px !important; }[data-css="tve-u-161f63a89d4"] { margin-top: 0px !important; margin-bottom: 0px !important; }:not(#tve) [data-css="tve-u-161f624c20f"] { font-size: 16px !important; }:not(#tve) [data-css="tve-u-161f6399432"] { font-size: 16px !important; }:not(#tve) [data-css="tve-u-161f6397f72"] { font-size: 16px !important; }:not(#tve) [data-css="tve-u-161f63969d0"] { font-size: 16px !important; }:not(#tve) [data-css="tve-u-161f6394a98"] { font-size: 16px !important; }:not(#tve) [data-css="tve-u-161f6393399"] { font-size: 16px !important; }:not(#tve) [data-css="tve-u-161f6037605"] { font-size: 13px !important; }:not(#tve) [data-css="tve-u-161f60ba3d6"] { font-size: 13px !important; }[data-css="tve-u-161f6012272"] { max-width: 100%; }:not(#tve) [data-css="tve-u-161f5ffc34a"] { font-size: 14px !important; }:not(#tve) [data-css="tve-u-161f5f51bfe"] { font-size: 15.3333px !important; }[data-css="tve-u-161f5ee7535"] { display: block; max-width: 272px; width: 272px; }[data-css="tve-u-161f5ee7535"] .tcb-button-link { min-height: 54.7619px; font-size: 1.33333em; padding-top: 0px; padding-bottom: 0px; }:not(#tve) [data-css="tve-u-161f5eda8d3"] { font-size: 11px !important; }:not(#tve) [data-css="tve-u-161f5d4eb59"] { font-size: 10px !important; }[data-css="tve-u-161f5e552fe"] { text-shadow: rgba(0, 0, 0, 0.4) 2px 2px 2px, rgba(0, 0, 0, 0.4) -2px 0px 2px, rgba(0, 0, 0, 0.4) 2px 0px 2px, rgba(0, 0, 0, 0.4) 0px -2px 2px !important; }:not(#tve) [data-css="tve-u-161e701280f"] { font-size: 19px !important; }[data-css="tve-u-161f624c204"] { max-width: 150%; }[data-css="tve-u-161f624c206"] { clip-path: url("#clip-mobile-bottom-64c077b6fa175"); -webkit-clip-path: url("#clip-mobile-bottom-64c077b6fa175");  background-image: none !important; }[data-css="tve-u-161f624c207"] { background-image: none !important; }:not(#tve) [data-css="tve-u-161f624c208"] { font-size: 16px !important; }[data-css="tve-u-161f624c212"] { background-image: none !important; }[data-css="tve-u-161f624c20e"] { background-image: none !important; }[data-css="tve-u-161f624c211"] { background-image: none !important; }:not(#tve) [data-css="tve-u-161f64f42c4"] { font-size: 13px !important; }}</style>
+			<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PW694ZR');</script>
+<!-- End Google Tag Manager --><script type="text/javascript">!function(e,t){(e=t.createElement("script")).src="https://cdn.convertbox.com/convertbox/js/embed.js",e.id="app-convertbox-script",e.async=true,e.dataset.uuid="90224a33-9e60-47d3-a43d-05aa7035170f",document.getElementsByTagName("head")[0].appendChild(e)}(window,document);</script>
+		<style type="text/css">
+			html {
+				height: auto;
+			}
 
-  </head>
-  <body>
-          <meta http-content='IE=Edge' http-equiv='X-UA-Compatible'>
-      <meta content='width=device-width,initial-scale=1.0,user-scalable=no' name='viewport'>
-<meta id="fedora-keys" data-commit-sha="eed132ab918d227c0a649f54610365d16ab769e0" data-env="production" data-sentry-public-dsn="https://8149a85a83fa4ec69640c43ddd69017d@sentry.io/120346" data-stripe="pk_live_hkgvgSBxG4TAl3zGlXiB1KUX" data-track-all-ahoy="false" data-track-changes-ahoy="false" data-track-clicks-ahoy="false" data-track-sumbits-ahoy="false" data-filepicker="ADNupMnWyR7kCWRvm76Laz" data-taxamo="public_3adAdeo6B9dUufD_mJMEMkTXmxbK-vffcybxQEvrshk" data-iris-url="https://eventable.teachable.cloud" /><meta id="fedora-data" data-report-card="{}" data-course-ids="[]" data-completed-lecture-ids="[]" data-school-id="430575" data-school-launched="true" data-preview="logged_out" data-turn-off-fedora-branding="false" data-plan-supports-whitelabeling="true" data-powered-by-text="Powered by" data-asset-path="//https://fedora.teachablecdn.com/assets/footer/teachable-logomark-white-31d2296978598bacace50e6d48a2e1223c20a9b074af424acdd465676f81560f.svg" data-school-preferences="{&quot;ssl_forced&quot;:&quot;true&quot;,&quot;bazaar_enabled&quot;:&quot;false&quot;,&quot;paypal_enabled&quot;:&quot;false&quot;,&quot;autoplay_lectures&quot;:&quot;true&quot;,&quot;comments_threaded&quot;:&quot;true&quot;,&quot;course_blocks_beta&quot;:&quot;true&quot;,&quot;eu_vat_tax_enabled&quot;:&quot;false&quot;,&quot;legacy_back_office&quot;:&quot;false&quot;,&quot;themeable_disabled&quot;:&quot;false&quot;,&quot;back_office_enabled&quot;:&quot;false&quot;,&quot;comments_moderation&quot;:&quot;false&quot;,&quot;eu_vat_tax_eligible&quot;:&quot;true&quot;,&quot;charge_exclusive_tax&quot;:&quot;true&quot;,&quot;send_receipts_emails&quot;:&quot;true&quot;,&quot;autocomplete_lectures&quot;:&quot;false&quot;,&quot;class_periods_enabled&quot;:&quot;false&quot;,&quot;authors_can_manage_pbc&quot;:&quot;true&quot;,&quot;css_properties_enabled&quot;:&quot;false&quot;,&quot;preenrollments_enabled&quot;:&quot;false&quot;,&quot;new_text_editor_enabled&quot;:&quot;false&quot;,&quot;require_terms_agreement&quot;:&quot;true&quot;,&quot;send_new_comment_emails&quot;:&quot;true&quot;,&quot;send_drip_content_emails&quot;:&quot;true&quot;,&quot;ssl_forced_from_creation&quot;:&quot;true&quot;,&quot;turn_off_fedora_branding&quot;:&quot;false&quot;,&quot;allow_comment_attachments&quot;:&quot;true&quot;,&quot;authors_can_email_students&quot;:&quot;false&quot;,&quot;authors_can_manage_coupons&quot;:&quot;false&quot;,&quot;teachable_accounts_enabled&quot;:&quot;true&quot;,&quot;teachable_payments_enabled&quot;:&quot;false&quot;,&quot;authors_can_import_students&quot;:&quot;false&quot;,&quot;authors_can_publish_courses&quot;:&quot;false&quot;,&quot;internal_subscriptions_beta&quot;:&quot;true&quot;,&quot;recaptcha_enabled_on_signup&quot;:&quot;true&quot;,&quot;tax_form_collection_enabled&quot;:&quot;false&quot;,&quot;display_vat_inclusive_prices&quot;:&quot;true&quot;,&quot;single_page_checkout_enabled&quot;:&quot;true&quot;,&quot;authors_can_set_course_prices&quot;:&quot;false&quot;,&quot;affiliate_cookie_duration_days&quot;:&quot;365&quot;,&quot;authors_can_issue_certificates&quot;:&quot;false&quot;,&quot;store_student_cards_separately&quot;:&quot;true&quot;,&quot;authors_can_manage_certificates&quot;:&quot;false&quot;,&quot;authors_can_manage_course_pages&quot;:&quot;false&quot;,&quot;block_default_gateway_purchases&quot;:&quot;true&quot;,&quot;disable_js_course_event_tracking&quot;:&quot;false&quot;,&quot;exclusive_vat_on_custom_gateways&quot;:&quot;true&quot;,&quot;send_certificate_issuance_emails&quot;:&quot;true&quot;,&quot;owner_teachable_accounts_required&quot;:&quot;true&quot;,&quot;prevent_payment_plan_cancellation&quot;:&quot;true&quot;,&quot;send_subscription_reminder_emails&quot;:&quot;true&quot;,&quot;automatically_add_disqus_attachments&quot;:&quot;true&quot;,&quot;recalc_course_pct_on_lecture_publish&quot;:&quot;false&quot;,&quot;send_confirmation_instructions_emails&quot;:&quot;true&quot;,&quot;send_limited_time_unenrollment_emails&quot;:&quot;true&quot;,&quot;turn_off_myteachable_sign_up_branding&quot;:&quot;false&quot;}" data-accessible-features="[&quot;bulk_enroll_students&quot;,&quot;manually_importing_users&quot;,&quot;native_certificates&quot;,&quot;earnings_statements&quot;,&quot;teachable_u&quot;,&quot;course_compliance&quot;,&quot;page_editor_v2&quot;,&quot;page_editor_v2_only&quot;,&quot;certificates_editor_v2&quot;,&quot;drip_content&quot;,&quot;custom_domain&quot;,&quot;coupons&quot;,&quot;graded_quizzes&quot;,&quot;power_editor&quot;,&quot;email&quot;,&quot;course_reports&quot;,&quot;webhooks&quot;,&quot;integrations&quot;,&quot;zapier_action_create_user&quot;,&quot;teachable_payments_payout_view&quot;,&quot;pbc&quot;,&quot;upsells&quot;,&quot;facebook_pixel&quot;,&quot;user_search_filters&quot;,&quot;multiple_course_pages&quot;,&quot;proration_upgrade_flow&quot;,&quot;limited_time_enrollments&quot;,&quot;new_device_confirmation&quot;,&quot;elasticsearch_users&quot;,&quot;elasticsearch_transactions&quot;,&quot;reset_progress&quot;,&quot;fraud_warnings&quot;,&quot;paypal_through_tp&quot;]" data-course-data="{&quot;is_lecture_order_enforced&quot;:null,&quot;is_minimum_quiz_score_enforced&quot;:null,&quot;is_video_completion_enforced&quot;:null,&quot;minimum_quiz_score&quot;:null,&quot;maximum_quiz_retakes&quot;:null}" data-course-url="https://biaheza.teachable.com/courses/674086" data-course-id="674086" /><meta id="analytics-keys" name="analytics" data-analytics="{}" />
-    
-    <div class="root" onclick="offMenu(event)">
-      
-        <!-- HEADER -->
-<a id="top"></a>
+			html.tcb-editor {
+				overflow-y: initial;
+			}
 
-<style id="ncs">
-  :root {
-    
-    --header_width: 960px;
-  }
-</style>
+			body:before, body:after {
+				height: 0 !important;
+			}
 
-<header id="header" class="header header-sticky">
-  <!-- Navbar -->
-  <nav
-    class="navbar is-not-signed-in is-homepage navbar-course-hero  at-top"
-    id='navbar'
-    role='navigation'>
-    <div class='navbar__header'>
-      <!-- Site logo -->
-      
-        <a class='navbar__title' href='https://biaheza.teachable.com'>
-        
-        </a>
-      
-      <!-- Header Menu -->
-      <div class="navbar__menu">
-          <button for="f-toggle" tabindex="0" role="button" id="hamburger" class="hamburger" aria-label="Toggle navigation"
-          onclick="toggleMenu('hamburger-menu')">
-          <span></span>
-          </button>
-          <ul class='navbar__menu__list menu hidden' id="hamburger-menu" role="menu" aria-describedby="hamburger" tabindex="0">
-  
+			.thrv_page_section .out {
+				max-width: none
+			}
 
-  
+			.tve_wrap_all {
+				position: relative;
+			}
 
-  <!-- If more than 5 links, collapse the rest in a dropdown -->
-  
-  
-  
-    
-      <li>
-        <a href='/sign_in'>
- 
-        </a>
-      </li>
-    
-    
-      <li>
-        <a href='/sign_up'>
+			/* Content Width - inherit Content Width directly from LP settings */
+			.thrv-page-section[data-inherit-lp-settings="1"] .tve-page-section-in {
+				max-width: 1080px !important;
+				max-width: var(--page-section-max-width) !important;
+			}
 
-        </a>
-      </li>
-    
-  
-</ul>
+			body.tcb-full-header .thrv_header,
+			body.tcb-full-footer .thrv_footer {
+				width: 100vw;
+				left: 50%;
+				right: 50%;
+				margin-left: -50vw !important;
+				margin-right: -50vw !important;
+			}
+		</style>
 
-      </div>
-    </div>
-  </nav>
-</header>
+	</head>
+		<body class="rtl page-template-default page page-id-12546 wp-embed-responsive tve_lp" style="" data-css="tve-u-15e09c94f7d">
+		<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PW694ZR"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) --><!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PW694ZR"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->		<div class="wrp cnt bSe" style="display: none">
+			<div class="awr"></div>
+		</div>
+		<div class="tve_wrap_all" id="tcb_landing_page">
+			<div class="tve_post_lp tve_lp_blank_v2 tve_lp_template_wrapper" style="">
+								<div id="tve_flt" class="tve_flt tcb-style-wrap"><div id="tve_editor" class="tve_shortcode_editor tar-main-content" data-post-id="12546"><div class="thrv_wrapper thrv-page-section">
+<div class="tve-page-section-out" data-css="tve-u-161f5d5bf22"></div>
+<div class="tve-page-section-in tve_empty_dropzone" data-css="tve-u-161f5d6fd11"><div class="thrv_wrapper thrv_contentbox_shortcode thrv-content-box" data-css="tve-u-161f5d2626c">
+<div class="tve-content-box-background"></div>
+<div class="tve-cb tve_empty_dropzone"><div class="thrv_wrapper thrv_text_element" data-tag="h2" data-css="tve-u-161f5d20344"><h2 class="" data-css="tve-u-161e701280f" style="text-align: center;"><span data-css="tve-u-161f5e552fe">"كيف تضمن نجـــاح حملاتك الإعلانيه عبر الإنترنت , و تبيع او تسوق ما تريده <strong>دون دفع أموال كثيره</strong> حتى لو لم تفعل ذلك ســـابقاً"</span></h2></div><div class="thrv_wrapper thrv_text_element tve_empty_dropzone"><p data-css="tve-u-161f5d4eb59" style="text-align: center;">## ستعرف كيف تـــربح أمــــوال أكثــر دون الحــاجه لصرف أمـــوال أكثر ##</p></div><div class="thrv_wrapper thrv_text_element tve_empty_dropzone" data-css="tve-u-161f5ee1334"><p data-css="tve-u-161f5eda8d3" style="text-align: center;">برنامج تدريبي خـــاص يـــأخذك خطـــوه بخطـــوه لبنـــاء السيلز فانلز لخطتك التسويقيه بحيث تضمن دائماً وصولك لنسبة العـــائدات التي تتمنـــاها في عملك و تنهي كل مشــــاكلك مع صرف المال في الإعلانات و التسويق</p></div><div class="thrv_wrapper thrv-button" data-css="tve-u-161f5ee7535" data-tcb_hover_state_parent="" data-button-style="rounded">
+<a href="#pay" class="tcb-button-link" rel="nofollow">
+<span class="tcb-button-texts"><span class="tcb-button-text thrv-inline-text" data-css="tve-u-161f5f51bfe">إشترك الآن في كـــورس السيلز فـــانل</span></span>
+</a>
+</div></div>
+</div></div>
+</div><div class="thrv_wrapper thrv-page-section">
+<div class="tve-page-section-out" data-css="tve-u-161f5fda0bf"></div>
+<div class="tve-page-section-in tve_empty_dropzone"><div class="thrv_wrapper thrv_contentbox_shortcode thrv-content-box" data-css="tve-u-161e6fe2775">
+<div class="tve-content-box-background"></div>
+<div class="tve-cb tve_empty_dropzone"><div class="thrv_wrapper thrv_text_element" data-tag="h2" data-css="tve-u-161f6012272"><h2 data-css="tve-u-161f5ffc34a" style="text-align: center;" class=""><strong>إذا كنت تريد إنشــــاء إعلانات مـــربحه , تتفوق على منـــافسيك بأقل مصروف ممكن , و بأصعب الأســــواق , أنت بالتأكيد بحـــاجه الى هـــذا</strong></h2></div><div class="thrv_wrapper thrv_text_element tve_empty_dropzone"><p data-css="tve-u-161f60ba3d6" style="text-align: center;">التسويق حالياً يحــتاج الى طريـــقه تستطيع من خلالها أن تزيد من قيمـــة ذلك العمـــيل المحـــتمل الذي رأى منتجك او ما تسوق له و أعجب بــه , فمن السيء جداً أن تدفــع على شخص ضغط على إعلانك ثم اختفـــى , نعم هذا سبب كبير لفشل ذلك الإعلان</p></div><div class="thrv_wrapper thrv_text_element tve_empty_dropzone" data-css="tve-u-161f6058c40"><p data-css="tve-u-161f6037605" style="text-align: center;">أنت بحاجه الى نظـــام حقيقي , مثبت و مجرب يجعل كل سنــت تدفعه على إعلاناتك محسوب و بدقه , نظام وظيفته أن ينقل ذلك الشخص إلى مكــــان يناسبه , مكان يناسب مرحلة شراؤه التي وصلها , فكما تعلم ليس كل من يرى إعلانك مستعد للشراء الآن , بل هو لن يشتري منك إلا بعد أن تنقله لمستوى أعلى أولاً .. و المشكله أن هذا الأمر مستحيل بدون استخدام سيستيم أوتوماتيكي يقوم بعمل كل ذلك لك</p></div></div>
+</div></div>
+</div><div class="thrv_wrapper thrv-page-section">
+<div class="tve-page-section-out" data-css="tve-u-161f6117405"></div>
+<div class="tve-page-section-in tve_empty_dropzone"><div class="thrv_wrapper thrv_contentbox_shortcode thrv-content-box" data-css="tve-u-161e6fe2775">
+<div class="tve-content-box-background"></div>
+<div class="tve-cb tve_empty_dropzone"><div class="thrv_wrapper thrv_text_element" data-tag="h2" data-css="tve-u-161f6012272"><h2 data-css="tve-u-161f5ffc34a" style="text-align: center;" class=""><strong>"أقـــدم لك"</strong></h2></div><div class="thrv_wrapper tve_image_caption" data-css="tve-u-161f60d3fb5"><span class="tve_image_frame"><img loading="lazy" class="tve_image wp-image-12576" alt="" width="254" height="109" title="logo" data-id="12576" src="//www.hanyhussain.com/wp-content/uploads/2018/03/logo.png"></span></div><div class="thrv_wrapper thrv-columns" data-css="tve-u-161f610d47c"><div class="tcb-flex-row tcb--cols--4" data-css="tve-u-161f611bd24"><div class="tcb-flex-col"><div class="tcb-col tve_empty_dropzone" data-css="tve-u-161f6129934"><div class="thrv_wrapper tve_image_caption" data-css="tve-u-161f60f9f92"><span class="tve_image_frame"><img loading="lazy" class="tve_image wp-image-12578" alt="" width="85" height="85" title="icon2" data-id="12578" src="//www.hanyhussain.com/wp-content/uploads/2018/03/icon2.png"></span></div><div class="thrv_wrapper thrv_text_element tve_empty_dropzone" data-css="tve-u-161f615d68b"><p data-css="tve-u-161f61431ab" style="text-align: center;"><strong>إحترف السيلز فانلز بكل أنواعه</strong></p></div></div></div><div class="tcb-flex-col"><div class="tcb-col tve_empty_dropzone" data-css="tve-u-161f612c28f"><div class="thrv_wrapper tve_image_caption" data-css="tve-u-161f60fcaf1"><span class="tve_image_frame"><img loading="lazy" class="tve_image wp-image-12579" alt="" width="85" height="85" title="icon3" data-id="12579" src="//www.hanyhussain.com/wp-content/uploads/2018/03/icon3.png"></span></div><div class="thrv_wrapper thrv_text_element tve_empty_dropzone" data-css="tve-u-161f61574b3"><p data-css="tve-u-161f61431ab" style="text-align: center;"><strong>أتمتة خطتك التسويقيه كامله</strong></p></div></div></div><div class="tcb-flex-col"><div class="tcb-col tve_empty_dropzone" data-css="tve-u-161f612d550"><div class="thrv_wrapper tve_image_caption" data-css="tve-u-161f60ffc44"><span class="tve_image_frame"><img loading="lazy" class="tve_image wp-image-12582" alt="" width="85" height="85" title="icon8" data-id="12582" src="//www.hanyhussain.com/wp-content/uploads/2018/03/icon8.png"></span></div><div class="thrv_wrapper thrv_text_element tve_empty_dropzone" data-css="tve-u-161f61574b3"><p data-css="tve-u-161f61431ab" style="text-align: center;"><strong>خــرائط و دراسات حاله ربحيه</strong></p></div></div></div><div class="tcb-flex-col"><div class="tcb-col tve_empty_dropzone" data-css="tve-u-161f612e7d9"><div class="thrv_wrapper tve_image_caption" data-css="tve-u-161f6102fd3"><span class="tve_image_frame"><img loading="lazy" class="tve_image wp-image-12577" alt="" width="85" height="85" title="icon1" data-id="12577" src="//www.hanyhussain.com/wp-content/uploads/2018/03/icon1.png"></span></div><div class="thrv_wrapper thrv_text_element tve_empty_dropzone" data-css="tve-u-161f61574b3"><p data-css="tve-u-161f61431ab" style="text-align: center;"><strong>عملاء مهتمين بأعلى قيمه ممكنــــه</strong></p></div></div></div></div></div></div>
+</div></div>
+</div><div class="thrv_wrapper thrv-page-section">
+<div class="tve-page-section-out" data-css="tve-u-161f61a783d"></div>
+<div class="tve-page-section-in tve_empty_dropzone"><div class="thrv_wrapper thrv_contentbox_shortcode thrv-content-box" data-css="tve-u-161f61b74ff">
+<div class="tve-content-box-background"></div>
+<div class="tve-cb tve_empty_dropzone"><div class="thrv_wrapper thrv-columns"><div class="tcb-flex-row tcb--cols--2"><div class="tcb-flex-col"><div class="tcb-col tve_empty_dropzone"><div class="thrv_wrapper tve_image_caption tve_ea_thrive_zoom" data-css="tve-u-161f61ecb9b"><span class="tve_image_frame" style="width: 100%;"><img loading="lazy" class="tve_image wp-image-12588 tve_evt_manager_listen tve_et_click" alt="" width="503" height="477" title="3" data-id="12588" src="//www.hanyhussain.com/wp-content/uploads/2018/03/3.png" style="" data-tcb-events="__TCB_EVENT_[{&quot;t&quot;:&quot;click&quot;,&quot;a&quot;:&quot;thrive_zoom&quot;,&quot;c&quot;:{&quot;id&quot;:&quot;12588&quot;,&quot;size&quot;:&quot;full&quot;}}]_TNEVE_BCT__" srcset="https://www.hanyhussain.com/wp-content/uploads/2018/03/3.png 503w, https://www.hanyhussain.com/wp-content/uploads/2018/03/3-300x284.png 300w" sizes="(max-width: 503px) 100vw, 503px" /></span></div></div></div><div class="tcb-flex-col"><div class="tcb-col tve_empty_dropzone"><div class="thrv_wrapper tve_image_caption tve_ea_thrive_zoom" data-css="tve-u-161f61f46da"><span class="tve_image_frame" style="width: 100%;"><img loading="lazy" class="tve_image wp-image-12590 tve_evt_manager_listen tve_et_click" alt="" width="941" height="330" title="gmailnew234" data-id="12590" src="//www.hanyhussain.com/wp-content/uploads/2018/03/gmailnew234.png" style="" data-tcb-events="__TCB_EVENT_[{&quot;t&quot;:&quot;click&quot;,&quot;a&quot;:&quot;thrive_zoom&quot;,&quot;c&quot;:{&quot;id&quot;:&quot;12590&quot;,&quot;size&quot;:&quot;full&quot;}}]_TNEVE_BCT__" srcset="https://www.hanyhussain.com/wp-content/uploads/2018/03/gmailnew234.png 941w, https://www.hanyhussain.com/wp-content/uploads/2018/03/gmailnew234-300x105.png 300w, https://www.hanyhussain.com/wp-content/uploads/2018/03/gmailnew234-768x269.png 768w, https://www.hanyhussain.com/wp-content/uploads/2018/03/gmailnew234-850x298.png 850w" sizes="(max-width: 941px) 100vw, 941px" /></span></div></div></div></div></div></div>
+</div></div>
+</div><div class="thrv_wrapper thrv-page-section">
+<div class="tve-page-section-out"></div>
+<div class="tve-page-section-in tve_empty_dropzone"><div class="thrv_wrapper thrv_contentbox_shortcode thrv-content-box" data-css="tve-u-161f62114a6">
+<div class="tve-content-box-background"></div>
+<div class="tve-cb tve_empty_dropzone"><div class="thrv_wrapper tve-froala thrv_text_element" data-tag="h2" data-css="tve-u-161f6012272"><h2 data-css="tve-u-161f5ffc34a" style="text-align: center;" class=""><strong>على ماذا ستحصل بالضبط عند اشتراكك في هذا التدريب الخاص ؟</strong></h2></div><div class="thrv_wrapper tve_image_caption" data-css="tve-u-161f6227932"><span class="tve_image_frame" style="width: 100%;"><img loading="lazy" class="tve_image wp-image-12575" alt="" width="750" height="438" title="respponsiove" data-id="12575" src="//www.hanyhussain.com/wp-content/uploads/2018/03/respponsiove.jpg" style="" srcset="https://www.hanyhussain.com/wp-content/uploads/2018/03/respponsiove.jpg 750w, https://www.hanyhussain.com/wp-content/uploads/2018/03/respponsiove-300x175.jpg 300w" sizes="(max-width: 750px) 100vw, 750px" /></span></div><div class="thrv_wrapper thrv_contentbox_shortcode thrv-content-box" data-ct="stylebox-8937" data-element-name="Styled Box" data-css="tve-u-161f624c21e">
+<div class="tve-content-box-background" data-css="tve-u-161f624c202"></div>
+<div class="tve-cb tve_empty_dropzone" data-css="tve-u-161f624c203"><div class="thrv_wrapper thrv_contentbox_shortcode thrv-content-box" style="" data-css="tve-u-161f624c204">
+<div class="tve-content-box-background" data-css="tve-u-161f624c206" data-clip-id="64c077b6fa175"><svg width="0" height="0" class="tve-decoration-svg"><defs><clipPath id="clip-bottom-64c077b6fa175" class="decoration-clip clip-path-bottom" clipPathUnits="objectBoundingBox" data-screen="" decoration-type="pointer" pointer-width="3" pointer-height="11" style=""><polygon points="0 0, 0 0.89, 0.485 0.89, 0.5 1, 0.515 0.89, 1 0.89, 1 0"></polygon></clipPath><clipPath id="clip-mobile-bottom-64c077b6fa175" class="decoration-clip clip-path-mobile-bottom" clipPathUnits="objectBoundingBox" data-screen="mobile-" decoration-type="pointer" pointer-width="8" pointer-height="11" style=""><polygon points="0 0, 0 0.89, 0.46 0.89, 0.5 1, 0.54 0.89, 1 0.89, 1 0"></polygon></clipPath></defs></svg></div>
+<div class="tve-cb tve_empty_dropzone"><div class="thrv_wrapper thrv_text_element" style="" data-css="tve-u-161f624c207" data-tag="h3"><h3 data-css="tve-u-161f624c208" style="text-align: center;" class="">8 فصـــول تفصيليه متجدده و الكثير من الهدايا</h3></div></div>
+</div><div class="thrv_wrapper thrv-columns" style="" data-css="tve-u-161f639fdce"><div class="tcb-flex-row tcb--cols--3" data-css="tve-u-161f63a0b6c"><div class="tcb-flex-col"><div class="tcb-col tve_empty_dropzone"><div class="thrv_wrapper thrv_contentbox_shortcode thrv-content-box" style="" data-css="tve-u-161f63a89d4">
+<div class="tve-content-box-background" data-css="tve-u-161f624c20d"></div>
+<div class="tve-cb tve_empty_dropzone"><div class="thrv_wrapper thrv_text_element tve_empty_dropzone" style="" data-css="tve-u-161f624c20e"><p data-css="tve-u-161f6393399" style="text-align: center;">ستعرف في الفصل الأول مبـــدأ عمل السيلز فانل , و كيف تستطيع من خلالها زيادة قيمة العميل , سترى أمثــله لذلك بالأرقـــام , و ستعرف الأهـــداف التي يجب ان تضعها في أي فانل تريد البدء بـــها , بالاضافه لرسم الرساله الصحيحه للعميل المحتمل الصحيح و في الوقت الصحيح</p></div></div>
+</div></div></div><div class="tcb-flex-col"><div class="tcb-col tve_empty_dropzone"><div class="thrv_wrapper thrv_contentbox_shortcode thrv-content-box" style="" data-css="tve-u-161f63aa110">
+<div class="tve-content-box-background" data-css="tve-u-161f6291712"></div>
+<div class="tve-cb tve_empty_dropzone"><div class="thrv_wrapper thrv_text_element tve_empty_dropzone" style="" data-css="tve-u-161f624c211"><p data-css="tve-u-161f6394a98" style="text-align: center;">في الفصل الثاني ستقوم ببرمجة تفكيرك للعمل , ستعرف الفكره وراء الالتزام , متى تضع التزام كبير و متى تقوم بجعله صغير للعميل المحتمل , ما طبيعة عمل كل من الماركيتينج و السيلز في هذه الفانلز , و ما اعتبره أهم الأمور في نجاح اي حمله تسويقيه .. وعي العميل و مراحل شراؤه</p></div></div>
+</div></div></div><div class="tcb-flex-col"><div class="tcb-col tve_empty_dropzone"><div class="thrv_wrapper thrv_contentbox_shortcode thrv-content-box" style="" data-css="tve-u-161f63add02">
+<div class="tve-content-box-background" data-css="tve-u-161f624c210"></div>
+<div class="tve-cb tve_empty_dropzone"><div class="thrv_wrapper thrv_text_element tve_empty_dropzone" style="" data-css="tve-u-161f624c212"><p data-css="tve-u-161f63969d0" style="text-align: center;">الفصل الممتع , ما هي انواع الفانلز , ما هو الليد و شروطه , سترى اكثر من 13 خريطة ناجحه حقيقيه مع تحميلها , و ستعرف كيف تستخدم المعادلات بالشكل الصحيح , انواع الليد ماجنيتس , و سترى الكثير من الأمثله و الدراسات التي حققت الملايين و سنقوم بتهكيرها سوياً لنعرف كيف نجحت</p></div></div>
+</div></div></div></div></div><div class="thrv_wrapper thrv-columns" style="" data-css="tve-u-161f624c20a"><div class="tcb-flex-row tcb--cols--3 tcb-medium-wrap" data-css="tve-u-161f624c20b"><div class="tcb-flex-col"><div class="tcb-col tve_empty_dropzone"><div class="thrv_wrapper thrv_contentbox_shortcode thrv-content-box" style="" data-css="tve-u-161f63af396">
+<div class="tve-content-box-background" data-css="tve-u-161f624c20d"></div>
+<div class="tve-cb tve_empty_dropzone"><div class="thrv_wrapper thrv_text_element tve_empty_dropzone" style="" data-css="tve-u-161f624c20e"><p data-css="tve-u-161f6397f72" style="text-align: center;">هنا ستعرف كيف تبني اي سيلز فانل تحتاجها , ستعرف الادوات التي استخدمها و يستخدمها كبار المسوقين في هذا المجال , ادوات صناعة الصفحات , تتبع للفانل , فانل الايميلات , للنماذج , للاستبيانات , للكويز و التقييمات , للتيستينج , و هنا سأعطيك فرصه لاقتناء أدوات قيمتها اكثر من 300$ مجاناً</p></div></div>
+</div></div></div><div class="tcb-flex-col"><div class="tcb-col tve_empty_dropzone"><div class="thrv_wrapper thrv_contentbox_shortcode thrv-content-box" style="" data-css="tve-u-161f63b058c">
+<div class="tve-content-box-background" data-css="tve-u-161f6291712"></div>
+<div class="tve-cb tve_empty_dropzone"><div class="thrv_wrapper thrv_text_element tve_empty_dropzone" style="" data-css="tve-u-161f624c211"><p data-css="tve-u-161f6399432" style="text-align: center;">دراسات الحاله الربحيه دراسات قمت بها بنفسي .. استخدمت فيها سيلز فانلز و جلبت نجاح مبهر باقل التكاليف , ما يميز استخدام الفانلز هو انك ستشاهد نسب عائدات غير معقوله , لو رآها وورن بافيت لطار عقله (خصوصاً انه كان يحصل على نسب عائدات سنويه تقدر ب 21%)</p></div></div>
+</div></div></div><div class="tcb-flex-col"><div class="tcb-col tve_empty_dropzone"><div class="thrv_wrapper thrv_contentbox_shortcode thrv-content-box" style="" data-css="tve-u-161f624c20c">
+<div class="tve-content-box-background" data-css="tve-u-161f624c210"></div>
+<div class="tve-cb tve_empty_dropzone"><div class="thrv_wrapper thrv_text_element tve_empty_dropzone" style="" data-css="tve-u-161f624c212"><p data-css="tve-u-161f624c20f" style="text-align: center;">هذا الفصل فيه برنامج الشركـــاء , نعم .. هناك برنامج شركاء لهذا الكورس فقط للمشتركين , &nbsp;سأحل لك مشكلتك الكبرى انك ليس لديك منتج و لا تعرف شركات افلييت لتسوق منتجات اخرى , فالمنتج سيكون موجود و شرح العمل على تسويقيه ايضا موجود و بالتفصيل , و ما عليك الا التطبيق فقط</p></div></div>
+</div></div></div></div></div><div class="thrv_wrapper thrv-button" data-css="tve-u-161f5ee7535" data-tcb_hover_state_parent="" data-button-style="rounded">
+<a href="#pay" class="tcb-button-link" rel="nofollow">
+<span class="tcb-button-texts"><span class="tcb-button-text thrv-inline-text" data-css="tve-u-161f5f51bfe">إشترك الآن في كـــورس السيلز فـــانل</span></span>
+</a>
+</div></div>
+</div></div>
+</div></div>
+</div><div class="thrv_wrapper thrv-page-section">
+<div class="tve-page-section-out" data-css="tve-u-161f61a783d"></div>
+<div class="tve-page-section-in tve_empty_dropzone"><div class="thrv_wrapper thrv_contentbox_shortcode thrv-content-box" data-css="tve-u-161f61b74ff">
+<div class="tve-content-box-background"></div>
+<div class="tve-cb tve_empty_dropzone"><div class="thrv_wrapper thrv-columns"><div class="tcb-flex-row tcb--cols--2"><div class="tcb-flex-col"><div class="tcb-col tve_empty_dropzone"><div class="thrv_wrapper tve_image_caption tve_ea_thrive_zoom" data-css="tve-u-161f63c3987"><span class="tve_image_frame" style="width: 100%;"><img loading="lazy" class="tve_image tve_evt_manager_listen tve_et_click wp-image-12589" alt="" width="586" height="187" title="11" data-id="12589" src="//www.hanyhussain.com/wp-content/uploads/2018/03/11.png" style="" data-tcb-events="__TCB_EVENT_[{&quot;t&quot;:&quot;click&quot;,&quot;a&quot;:&quot;thrive_zoom&quot;,&quot;c&quot;:{&quot;id&quot;:&quot;12588&quot;,&quot;size&quot;:&quot;full&quot;}}]_TNEVE_BCT__" srcset="https://www.hanyhussain.com/wp-content/uploads/2018/03/11.png 586w, https://www.hanyhussain.com/wp-content/uploads/2018/03/11-300x96.png 300w" sizes="(max-width: 586px) 100vw, 586px" /></span></div></div></div><div class="tcb-flex-col"><div class="tcb-col tve_empty_dropzone"><div class="thrv_wrapper tve_image_caption tve_ea_thrive_zoom" data-css="tve-u-161f63c76f4"><span class="tve_image_frame" style="width: 100%;"><img loading="lazy" class="tve_image tve_evt_manager_listen tve_et_click wp-image-12587" alt="" width="510" height="301" title="2" data-id="12587" src="//www.hanyhussain.com/wp-content/uploads/2018/03/2.png" style="" data-tcb-events="__TCB_EVENT_[{&quot;t&quot;:&quot;click&quot;,&quot;a&quot;:&quot;thrive_zoom&quot;,&quot;c&quot;:{&quot;id&quot;:&quot;12590&quot;,&quot;size&quot;:&quot;full&quot;}}]_TNEVE_BCT__" srcset="https://www.hanyhussain.com/wp-content/uploads/2018/03/2.png 510w, https://www.hanyhussain.com/wp-content/uploads/2018/03/2-300x177.png 300w, https://www.hanyhussain.com/wp-content/uploads/2018/03/2-413x244.png 413w" sizes="(max-width: 510px) 100vw, 510px" /></span></div></div></div></div></div></div>
+</div></div>
+</div><div class="thrv_wrapper thrv-page-section">
+<div class="tve-page-section-out" data-css="tve-u-161f63da8a0"></div>
+<div class="tve-page-section-in tve_empty_dropzone"><div class="thrv_wrapper thrv_contentbox_shortcode thrv-content-box" data-css="tve-u-161f62114a6">
+<div class="tve-content-box-background"></div>
+<div class="tve-cb tve_empty_dropzone"><div class="thrv_wrapper thrv_text_element" data-tag="h2" data-css="tve-u-161f6012272"><h2 data-css="tve-u-161f5ffc34a" style="text-align: center;" class=""><strong>على مـــــاذا أيـــــضاً سأحصـــل ؟</strong></h2></div><div class="thrv_wrapper thrv-columns"><div class="tcb-flex-row tcb--cols--2"><div class="tcb-flex-col c-33"><div class="tcb-col tve_empty_dropzone"><div class="thrv_wrapper tve_image_caption" data-css="tve-u-161f63ff2d1"><span class="tve_image_frame" style="width: 100%;"><img loading="lazy" class="tve_image wp-image-12610" alt="" width="408" height="470" title="labchart" data-id="12610" src="//www.hanyhussain.com/wp-content/uploads/2018/03/labchart.png" style="" srcset="https://www.hanyhussain.com/wp-content/uploads/2018/03/labchart.png 408w, https://www.hanyhussain.com/wp-content/uploads/2018/03/labchart-260x300.png 260w" sizes="(max-width: 408px) 100vw, 408px" /></span></div></div></div><div class="tcb-flex-col c-66"><div class="tcb-col tve_empty_dropzone"><div class="thrv_wrapper thrv_text_element tve_empty_dropzone"><p style="text-align: center;" data-css="tve-u-161f640ff12">COPYWRITING SECRETS IN SALES FUNNELS</p></div><div class="thrv_wrapper thrv-styled_list" data-icon-code="icon-check" data-icons-size="15" data-color="rgb(1, 114, 18)" data-css="tve-u-161f6434dcf"><ul class="tcb-styled-list"><li class="thrv-styled-list-item"><div class="tcb-styled-list-icon"><div class="thrv_wrapper thrv_icon tve_no_drag tcb-no-delete tcb-no-clone tcb-icon-inherit-style" data-css="tve-u-161f6426414"><svg class="tcb-icon" viewBox="0 0 32 32" data-name="checkcheck">
 
-      
-      <main class='view-school page-layout-v2 main'>
-        
-  
+<path d="M29.333 10.267c0 0.4-0.133 0.8-0.533 1.2l-14.8 14.8c-0.267 0.267-0.667 0.4-1.067 0.4s-0.933-0.133-1.2-0.533l-2.4-2.267-6.267-6.267c-0.267-0.267-0.4-0.667-0.4-1.2s0.133-0.8 0.533-1.2l2.4-2.4c0.267-0.133 0.667-0.4 1.067-0.4s0.8 0.133 1.2 0.533l5.067 5.067 11.2-11.333c0.267-0.267 0.667-0.533 1.2-0.533 0.4 0 0.8 0.133 1.2 0.533l2.4 2.4c0.267 0.267 0.4 0.667 0.4 1.2z"></path>
+</svg></div></div><span class="thrv-advanced-inline-text tve_editable tcb-styled-list-icon-text tcb-no-delete">كيف تزيد مبيعات ما تسوق له بتغيير بسيط في محتوى صفحاتك التسويقيه ؟</span></li><li class="thrv-styled-list-item"><div class="tcb-styled-list-icon"><div class="thrv_wrapper thrv_icon tve_no_drag tcb-no-delete tcb-no-clone tcb-icon-inherit-style" data-css="tve-u-161f6426417"><svg class="tcb-icon" viewBox="0 0 32 32" data-name="checkcheck">
 
-  
+<path d="M29.333 10.267c0 0.4-0.133 0.8-0.533 1.2l-14.8 14.8c-0.267 0.267-0.667 0.4-1.067 0.4s-0.933-0.133-1.2-0.533l-2.4-2.267-6.267-6.267c-0.267-0.267-0.4-0.667-0.4-1.2s0.133-0.8 0.533-1.2l2.4-2.4c0.267-0.133 0.667-0.4 1.067-0.4s0.8 0.133 1.2 0.533l5.067 5.067 11.2-11.333c0.267-0.267 0.667-0.533 1.2-0.533 0.4 0 0.8 0.133 1.2 0.533l2.4 2.4c0.267 0.267 0.4 0.667 0.4 1.2z"></path>
+</svg></div></div><span class="thrv-advanced-inline-text tve_editable tcb-styled-list-icon-text tcb-no-delete">كيف تفهم و تعرف عميلك المثالي لتضع له رسالتك في الوقت الصحيح</span></li><li class="thrv-styled-list-item"><div class="tcb-styled-list-icon"><div class="thrv_wrapper thrv_icon tve_no_drag tcb-no-delete tcb-no-clone tcb-icon-inherit-style" data-css="tve-u-161f6426435"><svg class="tcb-icon" viewBox="0 0 32 32" data-name="checkcheck">
 
-  
+<path d="M29.333 10.267c0 0.4-0.133 0.8-0.533 1.2l-14.8 14.8c-0.267 0.267-0.667 0.4-1.067 0.4s-0.933-0.133-1.2-0.533l-2.4-2.267-6.267-6.267c-0.267-0.267-0.4-0.667-0.4-1.2s0.133-0.8 0.533-1.2l2.4-2.4c0.267-0.133 0.667-0.4 1.067-0.4s0.8 0.133 1.2 0.533l5.067 5.067 11.2-11.333c0.267-0.267 0.667-0.533 1.2-0.533 0.4 0 0.8 0.133 1.2 0.533l2.4 2.4c0.267 0.267 0.4 0.667 0.4 1.2z"></path>
+</svg></div></div><span class="thrv-advanced-inline-text tve_editable tcb-styled-list-icon-text tcb-no-delete">أمثله حقيقيه و دراسات حققت الملايين بسبب الكوبي رايتينج</span></li><li class="thrv-styled-list-item"><div class="tcb-styled-list-icon"><div class="thrv_wrapper thrv_icon tve_no_drag tcb-no-delete tcb-no-clone tcb-icon-inherit-style" data-css="tve-u-161f644e230"><svg class="tcb-icon" viewBox="0 0 32 32" data-name="checkcheck">
 
-  
-    <div id="blocks" class="blocks-page blocks-page-course_sales_page_v2 ">
-  
-  
-    <!-- in live preview mode we add an extra wrapper around each block, and remove the `block.show` check -->
+<path d="M29.333 10.267c0 0.4-0.133 0.8-0.533 1.2l-14.8 14.8c-0.267 0.267-0.667 0.4-1.067 0.4s-0.933-0.133-1.2-0.533l-2.4-2.267-6.267-6.267c-0.267-0.267-0.4-0.667-0.4-1.2s0.133-0.8 0.533-1.2l2.4-2.4c0.267-0.133 0.667-0.4 1.067-0.4s0.8 0.133 1.2 0.533l5.067 5.067 11.2-11.333c0.267-0.267 0.667-0.533 1.2-0.533 0.4 0 0.8 0.133 1.2 0.533l2.4 2.4c0.267 0.267 0.4 0.667 0.4 1.2z"></path>
+</svg></div></div><span class="thrv-advanced-inline-text tve_editable tcb-styled-list-icon-text tcb-no-delete">كل هذا و اكثر ستعرفه في هذا<strong> البونص المجاني</strong> لك لو استفدت من العرض اليوم</span></li></ul></div></div></div></div></div><div class="thrv_wrapper thrv-divider" data-style="tve_sep-4" data-thickness="10" data-color="rgb(66, 66, 66)" data-css="tve-u-161f646ac11">
+<hr class="tve_sep tve_sep-4">
+</div><div class="thrv_wrapper thrv_text_element" data-tag="h2" data-css="tve-u-161f6012272"><h2 data-css="tve-u-161f5ffc34a" style="text-align: center;" class=""><strong>كيف استخدمت استراتيجيات هذا الكورس في تحصيل 400 مبيعه ؟</strong></h2></div><div class="thrv_wrapper tve_image_caption" data-css="tve-u-161f64cbe94"><span class="tve_image_frame" style="width: 100%;"><img loading="lazy" class="tve_image wp-image-12618" alt="" width="1042" height="646" title="teachable-sales" data-id="12618" src="//www.hanyhussain.com/wp-content/uploads/2018/03/teachable-sales.png" style="" srcset="https://www.hanyhussain.com/wp-content/uploads/2018/03/teachable-sales.png 1042w, https://www.hanyhussain.com/wp-content/uploads/2018/03/teachable-sales-300x186.png 300w, https://www.hanyhussain.com/wp-content/uploads/2018/03/teachable-sales-768x476.png 768w, https://www.hanyhussain.com/wp-content/uploads/2018/03/teachable-sales-1024x635.png 1024w, https://www.hanyhussain.com/wp-content/uploads/2018/03/teachable-sales-850x527.png 850w" sizes="(max-width: 1042px) 100vw, 1042px" /></span></div><div class="thrv_wrapper thrv_text_element tve_empty_dropzone" data-css="tve-u-161f64fed9c"><p data-css="tve-u-161f64f42c4" style="text-align: center;">هل يهمك أن تعرف كيف قمت باستخدام السيلز فانلز بتحصيل 400 مبيعه لمنتجاتي , و هذا يساوي تقريباً 26,000$ , مقابل صرف مبلغ لا يزيد على 750$ ؟ اذا كان يهمك فهذا البونص المجاني سيكون مفيداً جداً لك&nbsp;</p></div><div class="thrv_wrapper thrv-divider" data-style="tve_sep-4" data-thickness="10" data-color="rgb(66, 66, 66)" data-css="tve-u-161f646ac11">
+<hr class="tve_sep tve_sep-4">
+</div><div class="thrv_wrapper thrv_text_element" data-tag="h2" data-css="tve-u-161f6012272"><h2 data-css="tve-u-161f5ffc34a" style="text-align: center;" class=""><strong>دعم فــــني متواصـــل</strong></h2></div><div class="thrv_wrapper thrv-columns"><div class="tcb-flex-row tcb--cols--2"><div class="tcb-flex-col c-33"><div class="tcb-col tve_empty_dropzone"><div class="thrv_wrapper tve_image_caption" data-css="tve-u-161f6550254"><span class="tve_image_frame" style="width: 100%;"><img loading="lazy" class="tve_image wp-image-12621" alt="" width="663" height="507" title="training2" data-id="12621" src="//www.hanyhussain.com/wp-content/uploads/2018/03/training2.png" style="" srcset="https://www.hanyhussain.com/wp-content/uploads/2018/03/training2.png 663w, https://www.hanyhussain.com/wp-content/uploads/2018/03/training2-300x229.png 300w" sizes="(max-width: 663px) 100vw, 663px" /></span></div></div></div><div class="tcb-flex-col c-66"><div class="tcb-col tve_empty_dropzone"><div class="thrv_wrapper thrv_text_element tve_empty_dropzone"><p data-css="tve-u-161f640ff12" style="text-align: center;">FACEBOOK GROUP &amp; EMAIL</p></div><div class="thrv_wrapper thrv-styled_list" data-icon-code="icon-check" data-icons-size="15" data-color="rgb(1, 114, 18)" data-css="tve-u-161f6434dcf"><ul class="tcb-styled-list"><li class="thrv-styled-list-item"><div class="tcb-styled-list-icon"><div class="thrv_wrapper thrv_icon tve_no_drag tcb-no-delete tcb-no-clone tcb-icon-inherit-style" data-css="tve-u-161f6426414"><svg class="tcb-icon" viewBox="0 0 32 32" data-name="checkcheck">
 
-  
-    
+<path d="M29.333 10.267c0 0.4-0.133 0.8-0.533 1.2l-14.8 14.8c-0.267 0.267-0.667 0.4-1.067 0.4s-0.933-0.133-1.2-0.533l-2.4-2.267-6.267-6.267c-0.267-0.267-0.4-0.667-0.4-1.2s0.133-0.8 0.533-1.2l2.4-2.4c0.267-0.133 0.667-0.4 1.067-0.4s0.8 0.133 1.2 0.533l5.067 5.067 11.2-11.333c0.267-0.267 0.667-0.533 1.2-0.533 0.4 0 0.8 0.133 1.2 0.533l2.4 2.4c0.267 0.267 0.4 0.667 0.4 1.2z"></path>
+</svg></div></div><span class="thrv-advanced-inline-text tve_editable tcb-styled-list-icon-text tcb-no-delete">ستتواجد مع مشتركين فعليين يحققون نتائج يعطوك من خبراتهم</span></li><li class="thrv-styled-list-item"><div class="tcb-styled-list-icon"><div class="thrv_wrapper thrv_icon tve_no_drag tcb-no-delete tcb-no-clone tcb-icon-inherit-style" data-css="tve-u-161f6426417"><svg class="tcb-icon" viewBox="0 0 32 32" data-name="checkcheck">
 
-      <style type='text/css'>.b-14539523-alignment { text-align: center; } .b-14539523-image_overlay { opacity: 1; } .b-14539523-heading_text_color { color: #fefdff; } .b-14539523-subheading_text_color { color: #fcf6ff; }</style>
+<path d="M29.333 10.267c0 0.4-0.133 0.8-0.533 1.2l-14.8 14.8c-0.267 0.267-0.667 0.4-1.067 0.4s-0.933-0.133-1.2-0.533l-2.4-2.267-6.267-6.267c-0.267-0.267-0.4-0.667-0.4-1.2s0.133-0.8 0.533-1.2l2.4-2.4c0.267-0.133 0.667-0.4 1.067-0.4s0.8 0.133 1.2 0.533l5.067 5.067 11.2-11.333c0.267-0.267 0.667-0.533 1.2-0.533 0.4 0 0.8 0.133 1.2 0.533l2.4 2.4c0.267 0.267 0.4 0.667 0.4 1.2z"></path>
+</svg></div></div><span class="thrv-advanced-inline-text tve_editable tcb-styled-list-icon-text tcb-no-delete">فريق كامل مستعد لإجابتك و حل مشكلاتك يومياً&nbsp;&nbsp;</span></li><li class="thrv-styled-list-item"><div class="tcb-styled-list-icon"><div class="thrv_wrapper thrv_icon tve_no_drag tcb-no-delete tcb-no-clone tcb-icon-inherit-style" data-css="tve-u-161f6426435"><svg class="tcb-icon" viewBox="0 0 32 32" data-name="checkcheck">
 
-      
-        <div class="course-block block banner  " id="block-14539523">
-      
+<path d="M29.333 10.267c0 0.4-0.133 0.8-0.533 1.2l-14.8 14.8c-0.267 0.267-0.667 0.4-1.067 0.4s-0.933-0.133-1.2-0.533l-2.4-2.267-6.267-6.267c-0.267-0.267-0.4-0.667-0.4-1.2s0.133-0.8 0.533-1.2l2.4-2.4c0.267-0.133 0.667-0.4 1.067-0.4s0.8 0.133 1.2 0.533l5.067 5.067 11.2-11.333c0.267-0.267 0.667-0.533 1.2-0.533 0.4 0 0.8 0.133 1.2 0.533l2.4 2.4c0.267 0.267 0.4 0.667 0.4 1.2z"></path>
+</svg></div></div><span class="thrv-advanced-inline-text tve_editable tcb-styled-list-icon-text tcb-no-delete">سنرى و نطور و نصقل الفانلز الخاصه بعملك مهما كانت</span></li></ul></div></div></div></div></div></div>
+</div></div>
+</div><div class="thrv_wrapper thrv-page-section">
+<div class="tve-page-section-out"></div>
+<div class="tve-page-section-in tve_empty_dropzone"><div class="thrv_wrapper thrv_contentbox_shortcode thrv-content-box name" data-css="tve-u-161f656fd9d" id="pay">
+<div class="tve-content-box-background"></div>
+<div class="tve-cb tve_empty_dropzone"><div class="thrv_wrapper thrv_text_element" data-tag="h2" data-css="tve-u-161f6012272"><h2 data-css="tve-u-161f5ffc34a" style="text-align: center;" class=""><strong>هيا ماذا تنتظر ؟ أنا في انتظارك في الداخل</strong></h2></div><div class="thrv_wrapper thrv_contentbox_shortcode thrv-content-box" style="">
+<div class="tve-content-box-background" data-css="tve-u-161f67aeb25"></div>
+<div class="tve-cb tve_empty_dropzone"><div class="thrv_wrapper thrv-columns" data-css="tve-u-161f67aeb41" style=""><div class="tcb-flex-row tcb-medium-no-wrap tcb--cols--1"><div class="tcb-flex-col"><div class="tcb-col tve_empty_dropzone"><div class="thrv_wrapper thrv_contentbox_shortcode thrv-content-box" data-css="tve-u-161f67aeb4c" style="">
+<div class="tve-content-box-background" data-css="tve-u-161f67aeb43"></div>
+<div class="tve-cb tve_empty_dropzone" data-css="tve-u-161f67aeb2a"><div class="thrv_wrapper thrv_icon tcb-tve-icm-59a68973c291d-display tcb-icon-display" data-css="tve-u-161f67aeb3c" data-tcb_hover_state_parent=""><svg class="tcb-icon" viewBox="0 0 14 28" data-name="bolt">
 
-        
+<path d="M13.828 8.844c0.172 0.187 0.219 0.453 0.109 0.688l-8.437 18.078c-0.125 0.234-0.375 0.391-0.656 0.391-0.063 0-0.141-0.016-0.219-0.031-0.344-0.109-0.547-0.438-0.469-0.766l3.078-12.625-6.344 1.578c-0.063 0.016-0.125 0.016-0.187 0.016-0.172 0-0.359-0.063-0.484-0.172-0.187-0.156-0.25-0.391-0.203-0.609l3.141-12.891c0.078-0.297 0.359-0.5 0.688-0.5h5.125c0.391 0 0.703 0.297 0.703 0.656 0 0.094-0.031 0.187-0.078 0.281l-2.672 7.234 6.188-1.531c0.063-0.016 0.125-0.031 0.187-0.031 0.203 0 0.391 0.094 0.531 0.234z"></path>
+</svg></div><div class="thrv_wrapper thrv_text_element" data-css="tve-u-161f67aeb4a" data-tag="h1"><h1 data-css="tve-u-161f67c8da0" style="text-align: center;" class=""><span data-css="tve-u-161f67c8da2"><strong>إدفــع كامل المبلغ</strong></span></h1></div><div class="thrv_wrapper thrv_text_element tve_empty_dropzone"><p style="text-align: center;">ادفع كامل المبلغ لمرة واحده فقط</p></div><div class="thrv_wrapper thrv-styled_list" data-icon-code="icon-check" data-color="rgb(17, 109, 145)" style="" data-css="tve-u-161f67aeb2d"><ul class="tcb-styled-list"><li class="thrv-styled-list-item"><div class="tcb-styled-list-icon"><div class="thrv_wrapper thrv_icon tve_no_drag tcb-no-delete tcb-no-clone tcb-icon-inherit-style" data-css="tve-u-161f67aeb44"><svg class="tcb-icon" viewBox="0 0 32 32" data-name="check">
+<path d="M29.333 10.267c0 0.4-0.133 0.8-0.533 1.2l-14.8 14.8c-0.267 0.267-0.667 0.4-1.067 0.4s-0.933-0.133-1.2-0.533l-2.4-2.267-6.267-6.267c-0.267-0.267-0.4-0.667-0.4-1.2s0.133-0.8 0.533-1.2l2.4-2.4c0.267-0.133 0.667-0.4 1.067-0.4s0.8 0.133 1.2 0.533l5.067 5.067 11.2-11.333c0.267-0.267 0.667-0.533 1.2-0.533 0.4 0 0.8 0.133 1.2 0.533l2.4 2.4c0.267 0.267 0.4 0.667 0.4 1.2z"></path>
+</svg></div></div><span class="tve_editable tcb-styled-list-icon-text tcb-no-delete thrv-advanced-inline-text">مشاهدة كل فيديوهات الكورس&nbsp;</span></li><li class="thrv-styled-list-item"><div class="tcb-styled-list-icon"><div class="thrv_wrapper thrv_icon tve_no_drag tcb-no-delete tcb-no-clone tcb-icon-inherit-style" data-css="tve-u-161f67aeb45"><svg class="tcb-icon" viewBox="0 0 32 32" data-name="check">
+<path d="M29.333 10.267c0 0.4-0.133 0.8-0.533 1.2l-14.8 14.8c-0.267 0.267-0.667 0.4-1.067 0.4s-0.933-0.133-1.2-0.533l-2.4-2.267-6.267-6.267c-0.267-0.267-0.4-0.667-0.4-1.2s0.133-0.8 0.533-1.2l2.4-2.4c0.267-0.133 0.667-0.4 1.067-0.4s0.8 0.133 1.2 0.533l5.067 5.067 11.2-11.333c0.267-0.267 0.667-0.533 1.2-0.533 0.4 0 0.8 0.133 1.2 0.533l2.4 2.4c0.267 0.267 0.4 0.667 0.4 1.2z"></path>
+</svg></div></div><span class="tve_editable tcb-styled-list-icon-text tcb-no-delete thrv-advanced-inline-text">منطقة أعضاء محميه لمدى الحيـــاه&nbsp;</span></li><li class="thrv-styled-list-item"><div class="tcb-styled-list-icon"><div class="thrv_wrapper thrv_icon tve_no_drag tcb-no-delete tcb-no-clone tcb-icon-inherit-style" data-css="tve-u-161f67aeb46"><svg class="tcb-icon" viewBox="0 0 32 32" data-name="check">
+<path d="M29.333 10.267c0 0.4-0.133 0.8-0.533 1.2l-14.8 14.8c-0.267 0.267-0.667 0.4-1.067 0.4s-0.933-0.133-1.2-0.533l-2.4-2.267-6.267-6.267c-0.267-0.267-0.4-0.667-0.4-1.2s0.133-0.8 0.533-1.2l2.4-2.4c0.267-0.133 0.667-0.4 1.067-0.4s0.8 0.133 1.2 0.533l5.067 5.067 11.2-11.333c0.267-0.267 0.667-0.533 1.2-0.533 0.4 0 0.8 0.133 1.2 0.533l2.4 2.4c0.267 0.267 0.4 0.667 0.4 1.2z"></path>
+</svg></div></div><span class="tve_editable tcb-styled-list-icon-text tcb-no-delete thrv-advanced-inline-text">دعم فني كامل عبر المجموعه و الإيميل</span></li><li class="thrv-styled-list-item"><div class="tcb-styled-list-icon"><div class="thrv_wrapper thrv_icon tve_no_drag tcb-no-delete tcb-no-clone tcb-icon-inherit-style" data-css="tve-u-161f67ebaef"><svg class="tcb-icon" viewBox="0 0 32 32" data-name="checkcheck">
 
+<path d="M29.333 10.267c0 0.4-0.133 0.8-0.533 1.2l-14.8 14.8c-0.267 0.267-0.667 0.4-1.067 0.4s-0.933-0.133-1.2-0.533l-2.4-2.267-6.267-6.267c-0.267-0.267-0.4-0.667-0.4-1.2s0.133-0.8 0.533-1.2l2.4-2.4c0.267-0.133 0.667-0.4 1.067-0.4s0.8 0.133 1.2 0.533l5.067 5.067 11.2-11.333c0.267-0.267 0.667-0.533 1.2-0.533 0.4 0 0.8 0.133 1.2 0.533l2.4 2.4c0.267 0.267 0.4 0.667 0.4 1.2z"></path>
+</svg></div></div><span class="thrv-advanced-inline-text tve_editable tcb-styled-list-icon-text tcb-no-delete">فيديوهات متجدده</span></li><li class="thrv-styled-list-item"><div class="tcb-styled-list-icon"><div class="thrv_wrapper thrv_icon tve_no_drag tcb-no-delete tcb-no-clone tcb-icon-inherit-style" data-css="tve-u-161f67edf1d"><svg class="tcb-icon" viewBox="0 0 32 32" data-name="checkcheck">
 
+<path d="M29.333 10.267c0 0.4-0.133 0.8-0.533 1.2l-14.8 14.8c-0.267 0.267-0.667 0.4-1.067 0.4s-0.933-0.133-1.2-0.533l-2.4-2.267-6.267-6.267c-0.267-0.267-0.4-0.667-0.4-1.2s0.133-0.8 0.533-1.2l2.4-2.4c0.267-0.133 0.667-0.4 1.067-0.4s0.8 0.133 1.2 0.533l5.067 5.067 11.2-11.333c0.267-0.267 0.667-0.533 1.2-0.533 0.4 0 0.8 0.133 1.2 0.533l2.4 2.4c0.267 0.267 0.4 0.667 0.4 1.2z"></path>
+</svg></div></div><span class="thrv-advanced-inline-text tve_editable tcb-styled-list-icon-text tcb-no-delete">دراسات حاله حقيقيه</span></li><li class="thrv-styled-list-item"><div class="tcb-styled-list-icon"><div class="thrv_wrapper thrv_icon tve_no_drag tcb-no-delete tcb-no-clone tcb-icon-inherit-style" data-css="tve-u-161f67f03a2"><svg class="tcb-icon" viewBox="0 0 32 32" data-name="checkcheck">
 
+<path d="M29.333 10.267c0 0.4-0.133 0.8-0.533 1.2l-14.8 14.8c-0.267 0.267-0.667 0.4-1.067 0.4s-0.933-0.133-1.2-0.533l-2.4-2.267-6.267-6.267c-0.267-0.267-0.4-0.667-0.4-1.2s0.133-0.8 0.533-1.2l2.4-2.4c0.267-0.133 0.667-0.4 1.067-0.4s0.8 0.133 1.2 0.533l5.067 5.067 11.2-11.333c0.267-0.267 0.667-0.533 1.2-0.533 0.4 0 0.8 0.133 1.2 0.533l2.4 2.4c0.267 0.267 0.4 0.667 0.4 1.2z"></path>
+</svg></div></div><span class="thrv-advanced-inline-text tve_editable tcb-styled-list-icon-text tcb-no-delete">برنامج شركاء يساعدك على البدء بالعمل</span></li><li class="thrv-styled-list-item"><div class="tcb-styled-list-icon"><div class="thrv_wrapper thrv_icon tve_no_drag tcb-no-delete tcb-no-clone tcb-icon-inherit-style" data-css="tve-u-161f67f9f7f"><svg class="tcb-icon" viewBox="0 0 32 32" data-name="checkcheck">
 
+<path d="M29.333 10.267c0 0.4-0.133 0.8-0.533 1.2l-14.8 14.8c-0.267 0.267-0.667 0.4-1.067 0.4s-0.933-0.133-1.2-0.533l-2.4-2.267-6.267-6.267c-0.267-0.267-0.4-0.667-0.4-1.2s0.133-0.8 0.533-1.2l2.4-2.4c0.267-0.133 0.667-0.4 1.067-0.4s0.8 0.133 1.2 0.533l5.067 5.067 11.2-11.333c0.267-0.267 0.667-0.533 1.2-0.533 0.4 0 0.8 0.133 1.2 0.533l2.4 2.4c0.267 0.267 0.4 0.667 0.4 1.2z"></path>
+</svg></div></div><span class="thrv-advanced-inline-text tve_editable tcb-styled-list-icon-text tcb-no-delete">قسم كوبي رايتينج كبونص مجاناً</span></li><li class="thrv-styled-list-item"><div class="tcb-styled-list-icon"><div class="thrv_wrapper thrv_icon tve_no_drag tcb-no-delete tcb-no-clone tcb-icon-inherit-style" data-css="tve-u-161f67ff060"><svg class="tcb-icon" viewBox="0 0 32 32" data-name="checkcheck">
 
+<path d="M29.333 10.267c0 0.4-0.133 0.8-0.533 1.2l-14.8 14.8c-0.267 0.267-0.667 0.4-1.067 0.4s-0.933-0.133-1.2-0.533l-2.4-2.267-6.267-6.267c-0.267-0.267-0.4-0.667-0.4-1.2s0.133-0.8 0.533-1.2l2.4-2.4c0.267-0.133 0.667-0.4 1.067-0.4s0.8 0.133 1.2 0.533l5.067 5.067 11.2-11.333c0.267-0.267 0.667-0.533 1.2-0.533 0.4 0 0.8 0.133 1.2 0.533l2.4 2.4c0.267 0.267 0.4 0.667 0.4 1.2z"></path>
+</svg></div></div><span class="thrv-advanced-inline-text tve_editable tcb-styled-list-icon-text tcb-no-delete">دراسة كيف حققت 400 مبيعه مجاناً</span></li><li class="thrv-styled-list-item"><div class="tcb-styled-list-icon"><div class="thrv_wrapper thrv_icon tve_no_drag tcb-no-delete tcb-no-clone tcb-icon-inherit-style" data-css="tve-u-161f6806ecc"><svg class="tcb-icon" viewBox="0 0 32 32" data-name="checkcheck">
 
-
-  <style>
-    
-      .banner .b-14539523-heading_text_color {
-        color: #fefdff
-      }
-    
-
-    
-      .banner .b-14539523-subheading_text_color {
-        color: #fcf6ff
-      }
-    
-    @media screen and (min-width: 768px) {
-      . {
-        padding-top: px;
-      }
-      . {
-        padding-bottom: px;
-      }
-    }
-    .bl {
-      width: 100%;
-    }
-  </style>
-
-<section class="banner ">
-  <img
-    src='https://www.filepicker.io/api/file/EiVfchkTS52B9F5OuyiP'
-    alt=''
-    data-target="block.data.image_url block.data.alt_text"
-    class=b-14539523-image_overlay
-  />
-  <div class="bl">
-    <div class="banner__inner b-14539523-alignment   ">
-      <div class="banner__heading-group">
-        
-          <div data-target="block.data.heading_text" class="header b-14539523-heading_text_color rich-text">
-            <h1>BIAHEZA'S DROPSHIPPING COURSE</h1>
-          </div>
-        
-        
-          <div data-target="block.data.subheading_text" class="subheader b-14539523-subheading_text_color rich-text">
-            <h4>A step by step video guide in which I explain my entire process for building, marketing and scaling Shopify dropshipping stores in the current climate of Ecommerce</h4>
-          </div>
-        
-      </div>
-      
-        <div class="banner__button-wrapper">
-          <a href='https://payhip.com/b/iZl2'
-            target="_blank" rel="noopener"
-          >
-            <button
-              class='banner__button base-button'
-              data-target="block.data.button_text"
-            >
-              Enroll for $99
-            </button>
-          </a>
-        </div>
-      
-    </div>
-  </div>
-</section>
-
-
-      
-        </div>
-      
-
-    
-  
-
-
-  
-    <!-- in live preview mode we add an extra wrapper around each block, and remove the `block.show` check -->
-
-  
-    
-
-      
-
-      
-        <div class="course-block block custom_html  " id="block-14539519">
-      
-
-        <!-- if no liquid block data saved we render a default state -->
-
-<style>
-  .blank-template-body {
-  color: #36414D;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-  opacity: 0.6;
-  width: 750px;
-  text-align: left;
-  }
-</style>
-
-
-  
-    
-<iframe src="https://player.vimeo.com/video/365614853" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-  
-
-
-
-      
-        </div>
-      
-
-    
-  
-
-
-  
-    <!-- in live preview mode we add an extra wrapper around each block, and remove the `block.show` check -->
-
-  
-    
-
-      <style type='text/css'>.b-14539515-text_color { color: #36414D; } .b-14539515-background_color { background-color: #FFFFFF; } .b-14539515-heading_text_color { color: #36414D; }</style>
-
-      
-        <div class="course-block block text  " id="block-14539515">
-      
-
-        
-
-
-
-
-
-<style>
-
-  .block__text .b-14539515-text_color {
-    color: #36414D
-  }
-
-
-
-
-
-  .block__text .b-14539515-heading_text_color h1,
-  .block__text .b-14539515-heading_text_color h2,
-  .block__text .b-14539515-heading_text_color h3,
-  .block__text .b-14539515-heading_text_color h4,
-  .block__text .b-14539515-heading_text_color h5,
-  .block__text .b-14539515-heading_text_color h6 {
-    color: #36414D
-  }
-
-@media screen and (min-width: 768px) {
-  . {
-    padding-top: px;
-  }
-  . {
-    padding-bottom: px;
-  }
+<path d="M29.333 10.267c0 0.4-0.133 0.8-0.533 1.2l-14.8 14.8c-0.267 0.267-0.667 0.4-1.067 0.4s-0.933-0.133-1.2-0.533l-2.4-2.267-6.267-6.267c-0.267-0.267-0.4-0.667-0.4-1.2s0.133-0.8 0.533-1.2l2.4-2.4c0.267-0.133 0.667-0.4 1.067-0.4s0.8 0.133 1.2 0.533l5.067 5.067 11.2-11.333c0.267-0.267 0.667-0.533 1.2-0.533 0.4 0 0.8 0.133 1.2 0.533l2.4 2.4c0.267 0.267 0.4 0.667 0.4 1.2z"></path>
+</svg></div></div><span class="thrv-advanced-inline-text tve_editable tcb-styled-list-icon-text tcb-no-delete">و غيره الكثير ..</span></li></ul></div><div class="thrv_wrapper thrv-button" data-css="tve-u-161f67aeb42" id="pay">
+<a href="https://payhip.com/b/lx7v" class="tcb-button-link" data-css="tve-u-161f67aeb3e">
+<span class="tcb-button-texts"><span class="tcb-button-text thrv-inline-text" data-css="tve-u-161f67aeb33">إشترك الآن</span></span>
+</a>
+</div><div class="thrv_wrapper thrv_text_element tve_empty_dropzone" data-css="tve-u-161f67aeb3b"><p style="text-align: center;"><span style="font-size: 21px;">One Time Payment</span></p><p style="text-align: center;"><span style="font-size: 21px;">$77</span></p></div></div>
+</div></div></div></div></div></div>
+</div></div>
+</div></div>
+</div><div class="thrv_wrapper thrv-page-section">
+<div class="tve-page-section-out" data-css="tve-u-161f684d45f"></div>
+<div class="tve-page-section-in tve_empty_dropzone"><div class="thrv_wrapper thrv_text_element tve_empty_dropzone" data-css="tve-u-161f6854968"><p data-css="tve-u-161f6853332" style="text-align: center;">All Rights : hanyhussain.com |<span data-css="tve-u-161f688935a" style="color: rgb(255, 255, 255);"><a href="https://hanyhussain.com/blog?_ga=2.47985703.1235770611.1520088043-1412901593.1508431660&amp;_fs=6d905d98-96fb-4e90-bc03-97fd4f6ebe4a"> BLOG</a></span> | <span data-css="tve-u-161f6887d82" style="color: rgb(255, 255, 255);"><a href="https://www.hanyhussain.com/privacypolicy">PRIVACY POLICY</a></span> | <span data-css="tve-u-161f6885e11" style="color: rgb(255, 255, 255);"><a href="https://www.hanyhussain.com/termsofuse">TERMS OF USE</a> </span>| <span data-css="tve-u-161f6883bf2" style="color: rgb(255, 255, 255);"><a href="https://www.hanyhussain.com/callus/">CONTACT US</a></span></p></div></div>
+</div></div></div>			</div>
+						<div class="fr-dropdown-holder tcb-style-wrap"></div>
+		</div>
+						<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src=\"https://www.googletagmanager.com/ns.html?id=GTM-PW694ZR\"
+height=\"0\" width=\"0\" style=\"display:none;visibility:hidden\"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div class="gotop" title="Go Top"><span class="bdaia-io bdaia-io-chevron-up"></span></div>
+<script>
+    </script><script type="text/javascript">var TVE_Event_Manager_Registered_Callbacks = TVE_Event_Manager_Registered_Callbacks || {};TVE_Event_Manager_Registered_Callbacks.thrive_zoom = function(trigger,action,config){var $target = jQuery( this ),
+	offset = $target.offset(),
+	target_w = $target.outerWidth(),
+	target_h = $target.outerHeight(),
+	$element = $target,
+	sameImage = ( config.url && $element.attr( 'src' ) && $element.attr( 'src' ) === config.url ) || ( config.id && $element.attr( 'data-id' ) && $element.attr( 'data-id' ) == config.id );
+if ( config.id ) {
+	$fullSize = jQuery( "#tcb-image-zoom-" + config.id + " img" );
+	if ( $fullSize.length ) {
+		$element = $fullSize;
+	}
 }
-</style>
-
-<section class='container bl block__text rich-text   b-14539515-background_color'>
-  <div class="block__text-wrapper  b-14539515-heading_text_color b-14539515-text_color" data-target="block.data.body">
-    <p><strong style="background-color: inherit; color: inherit;">WHO THIS COURSE IS FOR:</strong></p><p>With this course my whole goal is to help you get your first big break with dropshipping as I truly believe that this stage is the biggest roadblock and where most people who try dropshipping fail. After you have your first success with dropshipping, it often becomes exponential as you begin to understand why things work the way they do and can duplicate your initial results. This is why I built a course focused towards people who are just starting out with dropshipping or have previously tried it but were not successful with it. I try my best to connect all the dots for you and show you what you actually need to do in order to succeed with this once in a lifetime opportunity of a business!!</p>
-  </div>
-</section>
-
-
-      
-        </div>
-      
-
-    
-  
-
-
-  
-    <!-- in live preview mode we add an extra wrapper around each block, and remove the `block.show` check -->
-
-  
-    
-
-      <style type='text/css'>.b-14539520-text_color { color: #36414D; } .b-14539520-heading_color { color: #36414D; } .b-14539520-text_alignment { text-align: left; } .b-14539520-background_color { background-color: #FFFFFF; }</style>
-
-      
-        <div class="course-block block image_with_text  " id="block-14539520">
-      
-
-        
-
-
-
-
-
-
-
-
-<style>
-
-  .block__image-with-text .b-14539520-text_color {
-    color: #36414D;
-  }
-
-
-
-  .block__image-with-text.b-14539520-background_color {
-    background-color: #FFFFFF;
-  }
-
-
-
-  .block__image-with-text .b-14539520-heading_color h1 {
-    color: #36414D;
-  }
-
-
-
-  .block__image-with-text .b-14539520-text_alignment {
-    text-align: left;
-  }
-
-@media screen and (min-width: 768px) {
-  . {
-    padding-top: px;
-  }
-  . {
-    padding-bottom: px;
-  }
-  
-}
-</style>
-
-<section class='bl container block__image-with-text b-14539520-background_color    image-with-text-layout-left'>
-  <div class=" block__image-with-text__wrapper b-14539520-heading_color b-14539520-text_color b-14539520-text_alignment">
-    
-      <div class="block__image-with-text__inner block__image-with-text__image">
-        <img
-          src='https://www.filepicker.io/api/file/0IHy7sZdQhaBPpIJtkFL'
-          alt=''
-          data-target="block.data.image_url block.data.alt_text"
-          class="block__image-with-text__image image"
-        />
-      </div>
-      <div class="block__image-with-text__inner block__image-with-text__text-wrapper rich-text">
-        
-          <h4>This is a screenshot from one of my best performing stores, as you can see I don&apos;t just focus on making a quick buck as this store has been running for over a year now and still does around $50,000 per month to this day!</h4><h4><br></h4>
-        
-        
-      </div>
-      
-    </div>
-</section>
-
-
-      
-        </div>
-      
-
-    
-  
-
-
-  
-    <!-- in live preview mode we add an extra wrapper around each block, and remove the `block.show` check -->
-
-  
-    
-
-      <style type='text/css'>.b-14539521-text_color { color: #36414D; } .b-14539521-heading_color { color: #36414D; } .b-14539521-text_alignment { text-align: left; } .b-14539521-background_color { background-color: #FFFFFF; }</style>
-
-      
-        <div class="course-block block image_with_text  " id="block-14539521">
-      
-
-        
-
-
-
-
-
-
-
-
-<style>
-
-  .block__image-with-text .b-14539521-text_color {
-    color: #36414D;
-  }
-
-
-
-  .block__image-with-text.b-14539521-background_color {
-    background-color: #FFFFFF;
-  }
-
-
-
-  .block__image-with-text .b-14539521-heading_color h1 {
-    color: #36414D;
-  }
-
-
-
-  .block__image-with-text .b-14539521-text_alignment {
-    text-align: left;
-  }
-
-@media screen and (min-width: 768px) {
-  . {
-    padding-top: px;
-  }
-  . {
-    padding-bottom: px;
-  }
-  
-}
-</style>
-
-<section class='bl container block__image-with-text b-14539521-background_color    image-with-text-layout-left'>
-  <div class=" block__image-with-text__wrapper b-14539521-heading_color b-14539521-text_color b-14539521-text_alignment">
-    
-      <div class="block__image-with-text__inner block__image-with-text__image">
-        <img
-          src='https://www.filepicker.io/api/file/Llih9bBAQmit3aLFHEUt'
-          alt=''
-          data-target="block.data.image_url block.data.alt_text"
-          class="block__image-with-text__image image"
-        />
-      </div>
-      <div class="block__image-with-text__inner block__image-with-text__text-wrapper rich-text">
-        
-          <p><br></p><h4><span style="color: rgb(54, 65, 77);">In the course I reveal exactly how I started this dropshipping store and how I duplicate these results with new stores that I start today!</span></h4>
-        
-        
-      </div>
-      
-    </div>
-</section>
-
-
-      
-        </div>
-      
-
-    
-  
-
-
-  
-    <!-- in live preview mode we add an extra wrapper around each block, and remove the `block.show` check -->
-
-  
-    
-
-      <style type='text/css'>.b-14539522-text_color { color: #36414D; } .b-14539522-heading_color { color: #36414D; } .b-14539522-text_alignment { text-align: left; } .b-14539522-background_color { background-color: #FFFFFF; }</style>
-
-      
-        <div class="course-block block image_with_text  " id="block-14539522">
-      
-
-        
-
-
-
-
-
-
-
-
-<style>
-
-  .block__image-with-text .b-14539522-text_color {
-    color: #36414D;
-  }
-
-
-
-  .block__image-with-text.b-14539522-background_color {
-    background-color: #FFFFFF;
-  }
-
-
-
-  .block__image-with-text .b-14539522-heading_color h1 {
-    color: #36414D;
-  }
-
-
-
-  .block__image-with-text .b-14539522-text_alignment {
-    text-align: left;
-  }
-
-@media screen and (min-width: 768px) {
-  . {
-    padding-top: px;
-  }
-  . {
-    padding-bottom: px;
-  }
-  
-}
-</style>
-
-<section class='bl container block__image-with-text b-14539522-background_color    image-with-text-layout-left'>
-  <div class=" block__image-with-text__wrapper b-14539522-heading_color b-14539522-text_color b-14539522-text_alignment">
-    
-      <div class="block__image-with-text__inner block__image-with-text__image">
-        <img
-          src='https://www.filepicker.io/api/file/Iz0AmqdQaezpWEF4JVQV'
-          alt=''
-          data-target="block.data.image_url block.data.alt_text"
-          class="block__image-with-text__image image"
-        />
-      </div>
-      <div class="block__image-with-text__inner block__image-with-text__text-wrapper rich-text">
-        
-          <h4>This is the most revealing piece of content I have ever put out, as I even reveal some of my personal best selling products</h4><h4><br></h4>
-        
-        
-      </div>
-      
-    </div>
-</section>
-
-
-      
-        </div>
-      
-
-    
-  
-
-
-  
-    <!-- in live preview mode we add an extra wrapper around each block, and remove the `block.show` check -->
-
-  
-    
-
-      <style type='text/css'>.b-14539517-text_color { color: #36414D; } .b-14539517-heading_color { color: #36414D; } .b-14539517-text_alignment { text-align: left; } .b-14539517-background_color { background-color: #FFFFFF; }</style>
-
-      
-        <div class="course-block block image_with_text  " id="block-14539517">
-      
-
-        
-
-
-
-
-
-
-
-
-<style>
-
-  .block__image-with-text .b-14539517-text_color {
-    color: #36414D;
-  }
-
-
-
-  .block__image-with-text.b-14539517-background_color {
-    background-color: #FFFFFF;
-  }
-
-
-
-  .block__image-with-text .b-14539517-heading_color h1 {
-    color: #36414D;
-  }
-
-
-
-  .block__image-with-text .b-14539517-text_alignment {
-    text-align: left;
-  }
-
-@media screen and (min-width: 768px) {
-  . {
-    padding-top: px;
-  }
-  . {
-    padding-bottom: px;
-  }
-  
-}
-</style>
-
-<section class='bl container block__image-with-text b-14539517-background_color    image-with-text-layout-left'>
-  <div class=" block__image-with-text__wrapper b-14539517-heading_color b-14539517-text_color b-14539517-text_alignment">
-    
-      <div class="block__image-with-text__inner block__image-with-text__image">
-        <img
-          src='https://www.filepicker.io/api/file/lsiAnSLAR9WgvWFNeRzL'
-          alt=''
-          data-target="block.data.image_url block.data.alt_text"
-          class="block__image-with-text__image image"
-        />
-      </div>
-      <div class="block__image-with-text__inner block__image-with-text__text-wrapper rich-text">
-        
-          <h4>My process for starting these stores is fairly similar every time, meaning you can use these exact steps to start your own</h4><h4><br></h4>
-        
-        
-      </div>
-      
-    </div>
-</section>
-
-
-      
-        </div>
-      
-
-    
-  
-
-
-  
-    <!-- in live preview mode we add an extra wrapper around each block, and remove the `block.show` check -->
-
-  
-    
-
-      <style type='text/css'>.b-14539518-text_color { color: #36414D; } .b-14539518-heading_color { color: #36414D; } .b-14539518-text_alignment { text-align: left; } .b-14539518-background_color { background-color: #FFFFFF; }</style>
-
-      
-        <div class="course-block block image_with_text  " id="block-14539518">
-      
-
-        
-
-
-
-
-
-
-
-
-<style>
-
-  .block__image-with-text .b-14539518-text_color {
-    color: #36414D;
-  }
-
-
-
-  .block__image-with-text.b-14539518-background_color {
-    background-color: #FFFFFF;
-  }
-
-
-
-  .block__image-with-text .b-14539518-heading_color h1 {
-    color: #36414D;
-  }
-
-
-
-  .block__image-with-text .b-14539518-text_alignment {
-    text-align: left;
-  }
-
-@media screen and (min-width: 768px) {
-  . {
-    padding-top: px;
-  }
-  . {
-    padding-bottom: px;
-  }
-  
-}
-</style>
-
-<section class='bl container block__image-with-text b-14539518-background_color    image-with-text-layout-left'>
-  <div class=" block__image-with-text__wrapper b-14539518-heading_color b-14539518-text_color b-14539518-text_alignment">
-    
-      <div class="block__image-with-text__inner block__image-with-text__image">
-        <img
-          src='https://www.filepicker.io/api/file/211snexNTcKEeM6vgESQ'
-          alt=''
-          data-target="block.data.image_url block.data.alt_text"
-          class="block__image-with-text__image image"
-        />
-      </div>
-      <div class="block__image-with-text__inner block__image-with-text__text-wrapper rich-text">
-        
-          <h4>Inside the course I talk about both my Facebook and Instagram theme page marketing strategies. This particular store was advertised strictly through Instagram theme pages!
-		  ​What Products ACTUALLY Work for Dropshipping
-		  
-The Software I Use to Find Winning Products
-
-​Five Winning Product Examples + Revealing Products I Have Personally Dropshipped
-​Creating a Brand New Shopify Website From Scratch Step by Step
-
-​Where to Get Content for Your Store
-
-​Setting up the Shipping and Legal Pages
-
-​Building a Proper Instagram Company Page From Scratch
-
-Where to Find Content for Your Company Page
-
-​What is the Facebook Pixel and How to Install it
-
-​My FULL Instagram Theme Page Marketing Strategy
-
-Choosing the Right Pages to Advertise on
-
-​How to use Facebook Ads
-
-​How I Target and Scale my Facebook Ads (Full Strategy)
-
-​How to Deal With Taxes
-
-​Setting up Customer 
-
-Testimonials:
-
-
-
-
-
-
-
-
-
-
-
-
-
-Get Immediate Access:
-
-This is a screenshot from one of my best performing stores, as you can see I don't just focus on making a quick buck as this store has been running for over a year now and still does around $50,000 per month to this day!
-
-In the course I reveal exactly how I started this dropshipping store and how I duplicate these results with new stores that I start today!
-
-This is the most revealing piece of content I have ever put out, as I even reveal some of my personal best selling products
-
-My process for starting these stores is fairly similar every time, meaning you can use these exact steps to start your own
-
-Inside the course I talk about both my Facebook and Instagram theme page marketing strategies. This particular store was advertised strictly through Instagram theme pages!
-
-COURSE CURRICULUM
- What Products Actually Work for Dropshipping
- The Software I Use to Find Current Winning Products
-​Five Winning Product Examples
-​Products I've Personally Dropshipped
-​Creating a New Shopify Store From Scratch Step by Step
-​Where to Get Content For Your Store
-​Setting up the Shipping and Legal Pages
-​Building a Proper Company Instagram Page From Scratch
-​Where to Find Content for Your Company Page
-​What is the Facebook Pixel and How to Install it
-​My Full Instagram Theme Page Marketing Strategy
-​Choosing the Right Theme Page to Advertise On
-​How to Use Facebook Ads
-​How I Target and Scale my Facebook Ads (Full Strategy)
-​How to Deal with Taxes
-​Setting Up Customer
-</h4><h4><br></h4>
-        
-        
-      </div>
-      
-    </div>
-</section>
-
-
-      
-        </div>
-      
-
-    
-  
-
-
-  
-    <!-- in live preview mode we add an extra wrapper around each block, and remove the `block.show` check -->
-
-  
-    
-
-      <style type='text/css'>.b-14539516-alignment { text-align: center; } .b-14539516-image_overlay { opacity: 0.9; } .b-14539516-heading_text_color { color: #ffffff; } .b-14539516-subheading_text_color { color: #36414D; }</style>
-
-      
-        <div class="course-block block banner  " id="block-14539516">
-      
-
-        
-
-
-
-
-
-
-
-  <style>
-    
-      .banner .b-14539516-heading_text_color {
-        color: #ffffff
-      }
-    
-
-    
-      .banner .b-14539516-subheading_text_color {
-        color: #36414D
-      }
-    
-    @media screen and (min-width: 768px) {
-      . {
-        padding-top: px;
-      }
-      . {
-        padding-bottom: px;
-      }
-    }
-    .bl {
-      width: 100%;
-    }
-  </style>
-
-<section class="banner ">
-  <img
-    src='https://www.filepicker.io/api/file/uYrQwAshTtG4ILigyY0U'
-    alt=''
-    data-target="block.data.image_url block.data.alt_text"
-    class=b-14539516-image_overlay
-  />
-  <div class="bl">
-    <div class="banner__inner b-14539516-alignment   ">
-      <div class="banner__heading-group">
-        
-          <div data-target="block.data.heading_text" class="header b-14539516-heading_text_color rich-text">
-            <h1>GET STARTED</h1>
-          </div>
-        
-        
-          <div data-target="block.data.subheading_text" class="subheader b-14539516-subheading_text_color rich-text">
-            <h4></h4>
-          </div>
-        
-      </div>
-      
-        <div class="banner__button-wrapper">
-          <a href='https://payhip.com/b/iZl2'
-            target="_blank" rel="noopener"
-          >
-            <button
-              class='banner__button base-button'
-              data-target="block.data.button_text"
-            >
-              $99.00
-            </button>
-          </a>
-        </div>
-      
-    </div>
-  </div>
-</section>
-
-
-      
-        </div>
-      
-
-    
-  
-
-
-  
-    <!-- in live preview mode we add an extra wrapper around each block, and remove the `block.show` check -->
-
-  
-    
-
-      <style type='text/css'>.b-14539514-text_color { color: #36414D; } .b-14539514-background_color { background-color: #FFFFFF; } .b-14539514-heading_text_color { color: #36414D; }</style>
-
-      
-        <div class="course-block block text  " id="block-14539514">
-      
-
-        
-
-
-
-
-
-<style>
-
-  .block__text .b-14539514-text_color {
-    color: #36414D
-  }
-
-
-
-
-
-  .block__text .b-14539514-heading_text_color h1,
-  .block__text .b-14539514-heading_text_color h2,
-  .block__text .b-14539514-heading_text_color h3,
-  .block__text .b-14539514-heading_text_color h4,
-  .block__text .b-14539514-heading_text_color h5,
-  .block__text .b-14539514-heading_text_color h6 {
-    color: #36414D
-  }
-
-@media screen and (min-width: 768px) {
-  . {
-    padding-top: px;
-  }
-  . {
-    padding-bottom: px;
-  }
-}
-</style>
-
-<section class='container bl block__text rich-text   b-14539514-background_color'>
-  <div class="block__text-wrapper  b-14539514-heading_text_color b-14539514-text_color" data-target="block.data.body">
-    
-</section>
-
-
-      
-        </div>
-      
-
-    
-  
-
-
-  
-
-  
-    </div>
-  
-
-
-
-
-
-
-
-
-      </main>
-      
-        
-<style id="footerStyles">
-  :root {
-    --footer_width: 960px;
-  }
-</style>
-<footer class=''>
-  <div class="footer">
-    <div class='footer__wrapper'>
-      <div class='footer__inner'>
-        <ul class="footer__list">
-          <li class="footer__copyright">
-            &copy;
-            
-          </li>
-          
-              
-                  <li>
-                      <a href='https://biaheza.teachable.com/p/refunds' target=''>
-                      
-                      </a>
-                  </li>
-              
-          
-        </ul>
-        <ul class="footer__list legal-links">
-          <li>
-            <a href="/p/terms">
-        
-            </a>
-          </li>
-          <li>
-            <a href="/p/privacy">
-            </a>
-          </li>
-          
-            <li>
-              
-                <a class='powered-by' href='https://teachable.com/teach-online/?src=school_footer'>
-                  <span class="powered-by-text"></span><img src="https://fedora.teachablecdn.com/assets/footer/teachable-logomark-white-31d2296978598bacace50e6d48a2e1223c20a9b074af424acdd465676f81560f.svg" class='powered-by-logo'  target="_blank" rel="noopener" alt="Teachable">
-                </a>
-              
-              </li>
-            
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
-
-
-      
-    </div>
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-      if (!Element.prototype.closest) {
-        Element.prototype.closest = function(s) {
-          let el = this;
-          do {
-            if (el.matches(s)) return el;
-            el = el.parentElement || el.parentNode;
-          } while (el !== null && el.nodeType === 1);
-          return null;
-        };
-      }
-      const offMenu = event => {
-      if (event.target.closest('.navbar__menu')) return
-      document
-        .querySelectorAll('.menu')
-        .forEach(item => {
-          item.classList.add('hidden')
-          item.setAttribute('aria-hidden', 'true')
-        })
-      }
-      const toggleMenu = id => {
-  const el = document.getElementById(id)
-  if (el.classList.contains('hidden')) {
-    document
-      .querySelectorAll('.inner-menu')
-      .forEach(item => {
-        item.classList.add('hidden')
-        item.setAttribute('aria-hidden', 'true')
-      })
-    el.classList.remove('hidden')
-    el.setAttribute('aria-hidden', 'false')
-  } else {
-    el.classList.add('hidden')
-    el.setAttribute('aria-hidden', 'true')
-  }
-  !el.classList.contains('hidden') && el.focus()
+/* If it is the same img but set from Anim&Action work like Open full size image on click*/
+if ( ! sameImage || ( sameImage && config.sizeChanged ) ) {
+	if ( config.id ) {
+		$element = jQuery( "#tcb-image-zoom-" + config.id + " img" )
+	} else if ( $element.find( "img" ).length ) {
+		$element = $element.find( "img" )
+	}
 }
 
-      const domBody = document.body
-      const usingMouse = 'using-mouse'
-      domBody.addEventListener('mousedown', () => {
-        domBody.classList.add(usingMouse)
-      })
-      domBody.addEventListener('keydown', () => {
-        domBody.classList.remove(usingMouse)
-      })
+var image_src = $element.attr( "data-opt-src" ) || $element.attr( "src" ),
+	$lightbox = jQuery( '#tve_zoom_lightbox' ),
+	$overlay = jQuery( '#tve_zoom_overlay' ),
+	windowWidth = window.innerWidth,
+	windowHeight = window.innerHeight,
+	img_size = $element.data( "tve-zoom-clone" ),
+	resizeScale = windowWidth < 600 ? 0.8 : 0.9;
 
-      const headerEl = document.querySelector('#navbar')
-      const topHook = document.querySelector('#top')
-      if (
-        "IntersectionObserver" in window
-      ) {
-        const observer = new IntersectionObserver(entries => {
-          if (entries[0].boundingClientRect.y < 0) {
-            headerEl.classList.remove('at-top')
-          } else {
-            headerEl.classList.add('at-top')
-          }
-        },{threshold: 1});
-        observer.observe(topHook)
-      }
-    </script>
-  </body>
+if ( typeof img_size === 'undefined' ) {
+	var $clone = $element.clone()
+	                     .css( {
+		                     position: "absolute",
+		                     width: "",
+		                     height: "",
+		                     left: "-8000px",
+		                     top: "-8000px"
+	                     } ).removeAttr( "width height" );
+	$clone.appendTo( "body" );
+	/**
+	 * `.one()` ensures this will not get executed multiple times.
+	 */
+	$clone.one( 'load', function () {
+		const height = parseFloat( $element.attr( 'data-init-height' ) ) || parseFloat( $element.attr( 'height' ) || $element.height() ),
+			width = parseFloat( $element.attr( 'data-init-width' ) ) || parseFloat( $element.attr( 'width' ) || $element.width() );
+		img_size = {
+			"originalWidth": width,
+			"width": width,
+			"originalHeight": height,
+			"height": height
+		};
+
+		if ( img_size.originalWidth > windowWidth * resizeScale || img_size.originalHeight > windowHeight * resizeScale ) {
+			var widthPercent = img_size.originalWidth / windowWidth,
+				heightPercent = img_size.originalHeight / windowHeight;
+
+			img_size.width = ( ( widthPercent > heightPercent ) ? ( windowWidth * resizeScale ) : ( windowHeight * resizeScale * ( img_size.originalWidth / img_size.originalHeight ) ) );
+			img_size.height = ( ( widthPercent > heightPercent ) ? ( windowWidth * resizeScale * ( img_size.originalHeight / img_size.originalWidth ) ) : ( windowHeight * resizeScale ) );
+
+			img_size.width += 30;
+			img_size.height += 30;
+		}
+
+		$element.data( "tve-zoom-clone", img_size );
+
+		show_lightbox();
+	} );
+	/**
+	 * Firefox doesnt trigger load event for the clone when is open full size image
+	 */
+	if ( TCB_Front.browser.mozilla && ( sameImage || typeof sameImage === 'undefined' ) ) {
+		$clone.trigger( 'load' );
+	} else if ( image_src.includes( '.optimole.com/' ) ) {
+		/**
+		 * Optimole w/ lazy-load will actually trigger loading of this image URL earlier.
+		 * Image is already loaded at this point. Just need to trigger the load event manually
+		 */
+		$clone.trigger( 'load' );
+	} else {
+		/**
+		 * Finally, some failsafe mechanism, trigger the load event with a delay. There have been cases reported where it does not "always" work.
+		 */
+		setTimeout( function () {
+			$clone.trigger( 'load' );
+		}, 500 );
+	}
+} else {
+	show_lightbox();
+}
+
+
+function show_lightbox() {
+
+	if ( $lightbox.length ) {
+		$lightbox.show();
+	} else {
+		$lightbox = jQuery( "<div id='tve_zoom_lightbox'><div class='tve_close_lb thrv-icon-cross'></div><div id='tve_zoom_image_content'></div></div>" )
+			.appendTo( 'body' );
+		$overlay = jQuery( "<div id='tve_zoom_overlay'></div>" ).hide()
+		                                                        .appendTo( 'body' );
+		var tve_close_lb = function () {
+			$lightbox.hide();
+			$overlay.hide();
+		};
+		/* set listeners for closing the lightbox */
+		jQuery( document ).on( "click", ".tve_close_lb", tve_close_lb );
+		jQuery( document ).on( "click", "#tve_zoom_overlay", tve_close_lb );
+		jQuery( document ).on( "keyup", function ( e ) {
+			if ( e.keyCode == 27 ) {
+				tve_close_lb();
+			}
+		} );
+
+		jQuery( window ).resize( function () {
+			var _sizes = $lightbox.data( "data-sizes" ),
+				windowWidth = window.innerWidth,
+				windowHeight = window.innerHeight,
+				resizeScale = windowWidth < 600 ? 0.8 : 0.9;
+
+			if ( _sizes.originalWidth > windowWidth * resizeScale || _sizes.originalHeight > windowHeight * resizeScale ) {
+				var widthPercent = _sizes.originalWidth / windowWidth,
+					heightPercent = _sizes.originalHeight / windowHeight;
+
+				_sizes.width = ( ( widthPercent > heightPercent ) ? ( windowWidth * resizeScale ) : ( windowHeight * resizeScale * ( _sizes.originalWidth / _sizes.originalHeight ) ) );
+				_sizes.height = ( ( widthPercent > heightPercent ) ? ( windowWidth * resizeScale * ( _sizes.originalHeight / _sizes.originalWidth ) ) : ( windowHeight * resizeScale ) );
+			}
+
+			$lightbox.width( _sizes.width );
+
+
+			$lightbox.css( "margin-left", - ( _sizes.width + 30 ) / 2 );
+			$lightbox.css( "margin-top", - ( _sizes.height + 30 ) / 2 );
+		} );
+	}
+
+	$lightbox.data( "data-sizes", img_size );
+
+	jQuery( "#tve_zoom_image_content" ).html( "<img src='" + image_src + "'/>" );
+
+	$lightbox.css( {
+		left: offset.left + target_w / 2,
+		top: offset.top + target_h / 2,
+		marginLeft: 0,
+		marginTop: 0,
+		width: 0,
+		opacity: 0
+	} ).animate( {
+		opacity: 1,
+		left: '50%',
+		top: '50%',
+		marginLeft: - ( img_size.width + 30 ) / 2,
+		marginTop: - ( img_size.height + 30 ) / 2,
+		width: img_size.width
+	}, 150 );
+	$overlay.fadeIn( 150 );
+}
+
+return false;};</script><div class="tcb-image-zoom" style="display: none" id="tcb-image-zoom-12588"><img width="503" height="477" src="https://www.hanyhussain.com/wp-content/uploads/2018/03/3.png" class="attachment-full size-full" alt="" loading="lazy" srcset="https://www.hanyhussain.com/wp-content/uploads/2018/03/3.png 503w, https://www.hanyhussain.com/wp-content/uploads/2018/03/3-300x284.png 300w" sizes="(max-width: 503px) 100vw, 503px" /></div><div class="tcb-image-zoom" style="display: none" id="tcb-image-zoom-12590"><img width="941" height="330" src="https://www.hanyhussain.com/wp-content/uploads/2018/03/gmailnew234.png" class="attachment-full size-full" alt="" loading="lazy" srcset="https://www.hanyhussain.com/wp-content/uploads/2018/03/gmailnew234.png 941w, https://www.hanyhussain.com/wp-content/uploads/2018/03/gmailnew234-300x105.png 300w, https://www.hanyhussain.com/wp-content/uploads/2018/03/gmailnew234-768x269.png 768w, https://www.hanyhussain.com/wp-content/uploads/2018/03/gmailnew234-850x298.png 850w" sizes="(max-width: 941px) 100vw, 941px" /></div><div class="tcb-image-zoom" style="display: none" id="tcb-image-zoom-12588"><img width="503" height="477" src="https://www.hanyhussain.com/wp-content/uploads/2018/03/3.png" class="attachment-full size-full" alt="" loading="lazy" srcset="https://www.hanyhussain.com/wp-content/uploads/2018/03/3.png 503w, https://www.hanyhussain.com/wp-content/uploads/2018/03/3-300x284.png 300w" sizes="(max-width: 503px) 100vw, 503px" /></div><div class="tcb-image-zoom" style="display: none" id="tcb-image-zoom-12590"><img width="941" height="330" src="https://www.hanyhussain.com/wp-content/uploads/2018/03/gmailnew234.png" class="attachment-full size-full" alt="" loading="lazy" srcset="https://www.hanyhussain.com/wp-content/uploads/2018/03/gmailnew234.png 941w, https://www.hanyhussain.com/wp-content/uploads/2018/03/gmailnew234-300x105.png 300w, https://www.hanyhussain.com/wp-content/uploads/2018/03/gmailnew234-768x269.png 768w, https://www.hanyhussain.com/wp-content/uploads/2018/03/gmailnew234-850x298.png 850w" sizes="(max-width: 941px) 100vw, 941px" /></div><script type='text/javascript' src='https://www.hanyhussain.com/wp-includes/js/imagesloaded.min.js' id='imagesloaded-js'></script>
+<script type='text/javascript' src='https://www.hanyhussain.com/wp-includes/js/masonry.min.js' id='masonry-js'></script>
+<script type='text/javascript' src='https://www.hanyhussain.com/wp-includes/js/jquery/jquery.masonry.min.js' id='jquery-masonry-js'></script>
+<script type='text/javascript' id='tve_frontend-js-extra'>
+/* <![CDATA[ */
+var tve_frontend_options = {"ajaxurl":"https:\/\/www.hanyhussain.com\/wp-admin\/admin-ajax.php","is_editor_page":"","page_events":[],"is_single":"1","social_fb_app_id":"612975615541276","dash_url":"https:\/\/www.hanyhussain.com\/wp-content\/plugins\/thrive-visual-editor\/thrive-dashboard","translations":{"Copy":"Copy","empty_username":"ERROR: The username field is empty.","empty_password":"ERROR: The password field is empty.","empty_login":"ERROR: Enter a username or email address.","min_chars":"At least %s characters are needed","no_headings":"No headings found"},"routes":{"posts":"https:\/\/www.hanyhussain.com\/wp-json\/tcb\/v1\/posts"},"post_request_data":[],"ip":"31.13.127.11","current_user":[],"post_id":"12546","post_title":"funnels masters course","post_type":"page","post_url":"https:\/\/www.hanyhussain.com\/funnels-masters-course\/","is_lp":"blank_v2"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.hanyhussain.com/wp-content/plugins/thrive-visual-editor/editor/js/dist/frontend.min.js' id='tve_frontend-js'></script>
+<script type='text/javascript' id='tve-dash-frontend-js-extra'>
+/* <![CDATA[ */
+var tve_dash_front = {"ajaxurl":"https:\/\/www.hanyhussain.com\/wp-admin\/admin-ajax.php","force_ajax_send":"1","is_crawler":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.hanyhussain.com/wp-content/plugins/thrive-visual-editor/thrive-dashboard/js/dist/frontend.min.js' id='tve-dash-frontend-js'></script>
+<script type='text/javascript' id='woohoo-main-js-extra'>
+/* <![CDATA[ */
+var bd = {"nonce":"f918fa5aca","ajaxurl":"https:\/\/www.hanyhussain.com\/wp-admin\/admin-ajax.php","is_singular":"1","has_lazy_load":"","bd_lazyload":"1","mobile_topmenu":"","sticky_sidebar":"1","all_lightbox":"1","click_to_comments":"","post_reading_position_indicator":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.hanyhussain.com/wp-content/themes/woohoo/js/main.js' id='woohoo-main-js'></script>
+<script type='text/javascript' src='https://www.hanyhussain.com/wp-content/themes/woohoo/js/js-cookie.js' id='js-cookie-js'></script>
+<script type='text/javascript' src='https://www.hanyhussain.com/wp-includes/js/wp-embed.min.js' id='wp-embed-js'></script>
+<script type='text/javascript' src='https://www.hanyhussain.com/wp-content/themes/woohoo/js/search.js' id='bd-search-js'></script>
+<script type="text/javascript">var tcb_post_lists=JSON.parse('[]');</script><script type="text/javascript">/*<![CDATA[*/if ( !window.TL_Const ) {var TL_Const={"security":"3d04121c6b","ajax_url":"https:\/\/www.hanyhussain.com\/wp-admin\/admin-ajax.php","forms":[],"action_conversion":"tve_leads_ajax_conversion","action_impression":"tve_leads_ajax_impression","ajax_load":0,"main_group_id":11549,"display_options":{"allowed_post_types":["post","page","attachment"],"flag_url_match":null},"custom_post_data":[],"current_screen":{"screen_type":3,"screen_id":12546},"ignored_fields":["email","_captcha_size","_captcha_theme","_captcha_type","_submit_option","_use_captcha","g-recaptcha-response","__tcb_lg_fc","__tcb_lg_msg","_state","_form_type","_error_message_option","_back_url","_submit_option","url","_asset_group","_asset_option","mailchimp_optin"]};} else {ThriveGlobal.$j.extend(true, TL_Const, {"security":"3d04121c6b","ajax_url":"https:\/\/www.hanyhussain.com\/wp-admin\/admin-ajax.php","forms":[],"action_conversion":"tve_leads_ajax_conversion","action_impression":"tve_leads_ajax_impression","ajax_load":0,"main_group_id":11549,"display_options":{"allowed_post_types":["post","page","attachment"],"flag_url_match":null},"custom_post_data":[],"current_screen":{"screen_type":3,"screen_id":12546},"ignored_fields":["email","_captcha_size","_captcha_theme","_captcha_type","_submit_option","_use_captcha","g-recaptcha-response","__tcb_lg_fc","__tcb_lg_msg","_state","_form_type","_error_message_option","_back_url","_submit_option","url","_asset_group","_asset_option","mailchimp_optin"]})} /*]]> */</script>			</body>
 </html>
+
+<!--
+Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/
+
+Object Caching 52/52 objects using disk
+Page Caching using disk: enhanced 
+Database Caching 13/13 queries in 0.001 seconds using disk
+
+Served from: www.hanyhussain.com @ 2020-09-26 11:35:27 by W3 Total Cache
+-->
